@@ -9,13 +9,27 @@
 /* Begin PBXBuildFile section */
 		02782E1427745FF5002076BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1327745FF5002076BD /* AppDelegate.swift */; };
 		02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1527745FF5002076BD /* SceneDelegate.swift */; };
-		02782E1827745FF5002076BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1727745FF5002076BD /* ViewController.swift */; };
+		02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1727745FF5002076BD /* RepositoriesViewController.swift */; };
 		02782E1B27745FF5002076BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02782E1927745FF5002076BD /* Main.storyboard */; };
 		02782E1D27745FF6002076BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02782E1C27745FF6002076BD /* Assets.xcassets */; };
 		02782E2027745FF6002076BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02782E1E27745FF6002076BD /* LaunchScreen.storyboard */; };
 		02782E2B27745FF7002076BD /* VacasaPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E2A27745FF7002076BD /* VacasaPracticeTests.swift */; };
 		02782E3527745FF7002076BD /* VacasaPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E3427745FF7002076BD /* VacasaPracticeUITests.swift */; };
 		02782E3727745FF7002076BD /* VacasaPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E3627745FF7002076BD /* VacasaPracticeUITestsLaunchTests.swift */; };
+		02782E4A277463D5002076BD /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E49277463D5002076BD /* RepositoriesListViewModel.swift */; };
+		02782E4C27746447002076BD /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E4B27746447002076BD /* Repository.swift */; };
+		02782E4F277464A6002076BD /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E4E277464A6002076BD /* RepositoryService.swift */; };
+		02782E51277464EB002076BD /* ListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E50277464EB002076BD /* ListError.swift */; };
+		02782E532774662F002076BD /* RepositoryDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E522774662F002076BD /* RepositoryDto.swift */; };
+		02782E5527746741002076BD /* GitHubApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E5427746741002076BD /* GitHubApi.swift */; };
+		02782E5727746A73002076BD /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E5627746A73002076BD /* HttpMethod.swift */; };
+		02782E5927746AB4002076BD /* ApiError.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E5827746AB4002076BD /* ApiError.swift.swift */; };
+		02782E5B27747428002076BD /* RepositorySearchResultDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E5A27747428002076BD /* RepositorySearchResultDto.swift */; };
+		02782E602775155B002076BD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 02782E5F2775155B002076BD /* SnapKit */; };
+		02782E622775176F002076BD /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E612775176F002076BD /* RepositoryTableViewCell.swift */; };
+		02782E6427751822002076BD /* TableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6327751822002076BD /* TableViewCellExtensions.swift */; };
+		02782E6627751915002076BD /* UIViewControllerExtension.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */; };
+		02782E6827752271002076BD /* DefaultTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6727752271002076BD /* DefaultTableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +53,7 @@
 		02782E1027745FF4002076BD /* VacasaPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacasaPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02782E1327745FF5002076BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02782E1527745FF5002076BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02782E1727745FF5002076BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02782E1727745FF5002076BD /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		02782E1A27745FF5002076BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02782E1C27745FF6002076BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02782E1F27745FF6002076BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,19 @@
 		02782E3027745FF7002076BD /* VacasaPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacasaPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02782E3427745FF7002076BD /* VacasaPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacasaPracticeUITests.swift; sourceTree = "<group>"; };
 		02782E3627745FF7002076BD /* VacasaPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacasaPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02782E49277463D5002076BD /* RepositoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModel.swift; sourceTree = "<group>"; };
+		02782E4B27746447002076BD /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		02782E4E277464A6002076BD /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
+		02782E50277464EB002076BD /* ListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListError.swift; sourceTree = "<group>"; };
+		02782E522774662F002076BD /* RepositoryDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDto.swift; sourceTree = "<group>"; };
+		02782E5427746741002076BD /* GitHubApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubApi.swift; sourceTree = "<group>"; };
+		02782E5627746A73002076BD /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		02782E5827746AB4002076BD /* ApiError.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift.swift; sourceTree = "<group>"; };
+		02782E5A27747428002076BD /* RepositorySearchResultDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchResultDto.swift; sourceTree = "<group>"; };
+		02782E612775176F002076BD /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		02782E6327751822002076BD /* TableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtensions.swift; sourceTree = "<group>"; };
+		02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift.swift; sourceTree = "<group>"; };
+		02782E6727752271002076BD /* DefaultTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02782E602775155B002076BD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +127,10 @@
 		02782E1227745FF4002076BD /* VacasaPractice */ = {
 			isa = PBXGroup;
 			children = (
+				02782E4327746320002076BD /* Core */,
+				02782E4427746329002076BD /* Features */,
 				02782E1327745FF5002076BD /* AppDelegate.swift */,
 				02782E1527745FF5002076BD /* SceneDelegate.swift */,
-				02782E1727745FF5002076BD /* ViewController.swift */,
 				02782E1927745FF5002076BD /* Main.storyboard */,
 				02782E1C27745FF6002076BD /* Assets.xcassets */,
 				02782E1E27745FF6002076BD /* LaunchScreen.storyboard */,
@@ -127,6 +156,74 @@
 			path = VacasaPracticeUITests;
 			sourceTree = "<group>";
 		};
+		02782E4327746320002076BD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				02782E4627746343002076BD /* Utils */,
+				02782E452774633B002076BD /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		02782E4427746329002076BD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				02782E4727746354002076BD /* RepositoriesList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		02782E452774633B002076BD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				02782E4D2774648D002076BD /* Dtos */,
+				02782E4E277464A6002076BD /* RepositoryService.swift */,
+				02782E5427746741002076BD /* GitHubApi.swift */,
+				02782E5627746A73002076BD /* HttpMethod.swift */,
+				02782E5827746AB4002076BD /* ApiError.swift.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		02782E4627746343002076BD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				02782E6327751822002076BD /* TableViewCellExtensions.swift */,
+				02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		02782E4727746354002076BD /* RepositoriesList */ = {
+			isa = PBXGroup;
+			children = (
+				02782E4827746372002076BD /* Views */,
+				02782E49277463D5002076BD /* RepositoriesListViewModel.swift */,
+				02782E1727745FF5002076BD /* RepositoriesViewController.swift */,
+				02782E4B27746447002076BD /* Repository.swift */,
+				02782E50277464EB002076BD /* ListError.swift */,
+			);
+			path = RepositoriesList;
+			sourceTree = "<group>";
+		};
+		02782E4827746372002076BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02782E612775176F002076BD /* RepositoryTableViewCell.swift */,
+				02782E6727752271002076BD /* DefaultTableHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02782E4D2774648D002076BD /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				02782E522774662F002076BD /* RepositoryDto.swift */,
+				02782E5A27747428002076BD /* RepositorySearchResultDto.swift */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +240,9 @@
 			dependencies = (
 			);
 			name = VacasaPractice;
+			packageProductDependencies = (
+				02782E5F2775155B002076BD /* SnapKit */,
+			);
 			productName = VacasaPractice;
 			productReference = 02782E1027745FF4002076BD /* VacasaPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +315,9 @@
 				Base,
 			);
 			mainGroup = 02782E0727745FF4002076BD;
+			packageReferences = (
+				02782E5E2775155B002076BD /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 02782E1127745FF4002076BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +361,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02782E1827745FF5002076BD /* ViewController.swift in Sources */,
+				02782E5727746A73002076BD /* HttpMethod.swift in Sources */,
+				02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */,
+				02782E51277464EB002076BD /* ListError.swift in Sources */,
 				02782E1427745FF5002076BD /* AppDelegate.swift in Sources */,
+				02782E6627751915002076BD /* UIViewControllerExtension.swift.swift in Sources */,
+				02782E5B27747428002076BD /* RepositorySearchResultDto.swift in Sources */,
+				02782E622775176F002076BD /* RepositoryTableViewCell.swift in Sources */,
+				02782E5527746741002076BD /* GitHubApi.swift in Sources */,
+				02782E6827752271002076BD /* DefaultTableHeaderView.swift in Sources */,
+				02782E4F277464A6002076BD /* RepositoryService.swift in Sources */,
+				02782E4C27746447002076BD /* Repository.swift in Sources */,
+				02782E4A277463D5002076BD /* RepositoriesListViewModel.swift in Sources */,
+				02782E532774662F002076BD /* RepositoryDto.swift in Sources */,
+				02782E6427751822002076BD /* TableViewCellExtensions.swift in Sources */,
+				02782E5927746AB4002076BD /* ApiError.swift.swift in Sources */,
 				02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +720,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02782E5E2775155B002076BD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02782E5F2775155B002076BD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02782E5E2775155B002076BD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02782E0827745FF4002076BD /* Project object */;
 }
