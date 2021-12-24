@@ -36,7 +36,7 @@ class RepositoriesViewController: UIViewController {
     }
     
     private func setup() {
-        viewModel = DisplayListViewModel()
+        viewModel = RepositoriesListViewModel()
         viewModel.delegate = self
     }
     

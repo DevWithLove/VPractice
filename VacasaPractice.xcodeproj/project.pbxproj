@@ -13,7 +13,7 @@
 		02782E1B27745FF5002076BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02782E1927745FF5002076BD /* Main.storyboard */; };
 		02782E1D27745FF6002076BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02782E1C27745FF6002076BD /* Assets.xcassets */; };
 		02782E2027745FF6002076BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02782E1E27745FF6002076BD /* LaunchScreen.storyboard */; };
-		02782E2B27745FF7002076BD /* VacasaPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E2A27745FF7002076BD /* VacasaPracticeTests.swift */; };
+		02782E2B27745FF7002076BD /* RepositoriesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E2A27745FF7002076BD /* RepositoriesListViewModelTests.swift */; };
 		02782E3527745FF7002076BD /* VacasaPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E3427745FF7002076BD /* VacasaPracticeUITests.swift */; };
 		02782E3727745FF7002076BD /* VacasaPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E3627745FF7002076BD /* VacasaPracticeUITestsLaunchTests.swift */; };
 		02782E4A277463D5002076BD /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E49277463D5002076BD /* RepositoriesListViewModel.swift */; };
@@ -66,7 +66,7 @@
 		02782E1F27745FF6002076BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02782E2127745FF6002076BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02782E2627745FF7002076BD /* VacasaPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacasaPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02782E2A27745FF7002076BD /* VacasaPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacasaPracticeTests.swift; sourceTree = "<group>"; };
+		02782E2A27745FF7002076BD /* RepositoriesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModelTests.swift; sourceTree = "<group>"; };
 		02782E3027745FF7002076BD /* VacasaPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacasaPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02782E3427745FF7002076BD /* VacasaPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacasaPracticeUITests.swift; sourceTree = "<group>"; };
 		02782E3627745FF7002076BD /* VacasaPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacasaPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		02782E2927745FF7002076BD /* VacasaPracticeTests */ = {
 			isa = PBXGroup;
 			children = (
-				02782E2A27745FF7002076BD /* VacasaPracticeTests.swift */,
+				02782E2A27745FF7002076BD /* RepositoriesListViewModelTests.swift */,
 			);
 			path = VacasaPracticeTests;
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02782E2B27745FF7002076BD /* VacasaPracticeTests.swift in Sources */,
+				02782E2B27745FF7002076BD /* RepositoriesListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

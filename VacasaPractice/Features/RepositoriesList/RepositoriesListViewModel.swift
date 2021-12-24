@@ -19,7 +19,7 @@ protocol RepositoriesListViewModelPortocol {
     func loadList()
 }
 
-class DisplayListViewModel: RepositoriesListViewModelPortocol {
+class RepositoriesListViewModel: RepositoriesListViewModelPortocol {
 
     private let repositoryWebServcie: RepositoryServiceProtocol
     
@@ -33,6 +33,7 @@ class DisplayListViewModel: RepositoriesListViewModelPortocol {
     
     var items: [Repository] = []
     
+    // Refer to RepositoriesListViewModelTests 
     func loadList() {
         repositoryWebServcie.fetch { [weak self] result in
             guard let self = self else { return }

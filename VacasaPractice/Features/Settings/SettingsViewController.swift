@@ -103,6 +103,7 @@ extension SettingTableViewCell: Configurable {
             infoLabel.isHidden = false
             return
         }
+        
         if let switchOption = setting as? SwitchSettingOption {
             switchControl.isOn = switchOption.value
             switchControl.isHidden = false
