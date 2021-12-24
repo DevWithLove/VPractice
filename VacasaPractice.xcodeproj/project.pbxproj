@@ -29,7 +29,14 @@
 		02782E622775176F002076BD /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E612775176F002076BD /* RepositoryTableViewCell.swift */; };
 		02782E6427751822002076BD /* TableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6327751822002076BD /* TableViewCellExtensions.swift */; };
 		02782E6627751915002076BD /* UIViewControllerExtension.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */; };
-		02782E6827752271002076BD /* DefaultTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6727752271002076BD /* DefaultTableHeaderView.swift */; };
+		02782E6C277529C3002076BD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6B277529C3002076BD /* SettingsViewController.swift */; };
+		02782E6E27754CC4002076BD /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6D27754CC4002076BD /* SettingsViewModel.swift */; };
+		02782E7027754D54002076BD /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E6F27754D54002076BD /* SettingsSection.swift */; };
+		02782E7427756285002076BD /* SettingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E7327756284002076BD /* SettingRepository.swift */; };
+		02782E7627756816002076BD /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E7527756816002076BD /* UserInfoView.swift */; };
+		02782E7827757104002076BD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E7727757104002076BD /* UserInfo.swift */; };
+		02782E7A2775729E002076BD /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E792775729E002076BD /* SettingTableViewCell.swift */; };
+		02782E7C27758068002076BD /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E7B27758068002076BD /* Configurable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +82,14 @@
 		02782E612775176F002076BD /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		02782E6327751822002076BD /* TableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtensions.swift; sourceTree = "<group>"; };
 		02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift.swift; sourceTree = "<group>"; };
-		02782E6727752271002076BD /* DefaultTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableHeaderView.swift; sourceTree = "<group>"; };
+		02782E6B277529C3002076BD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		02782E6D27754CC4002076BD /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		02782E6F27754D54002076BD /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		02782E7327756284002076BD /* SettingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRepository.swift; sourceTree = "<group>"; };
+		02782E7527756816002076BD /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		02782E7727757104002076BD /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		02782E792775729E002076BD /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		02782E7B27758068002076BD /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				02782E4727746354002076BD /* RepositoriesList */,
+				02782E692775298F002076BD /* Settings */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -190,6 +205,7 @@
 			children = (
 				02782E6327751822002076BD /* TableViewCellExtensions.swift */,
 				02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */,
+				02782E7B27758068002076BD /* Configurable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -210,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				02782E612775176F002076BD /* RepositoryTableViewCell.swift */,
-				02782E6727752271002076BD /* DefaultTableHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +237,28 @@
 				02782E5A27747428002076BD /* RepositorySearchResultDto.swift */,
 			);
 			path = Dtos;
+			sourceTree = "<group>";
+		};
+		02782E692775298F002076BD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				02782E6A277529A5002076BD /* Views */,
+				02782E6B277529C3002076BD /* SettingsViewController.swift */,
+				02782E6D27754CC4002076BD /* SettingsViewModel.swift */,
+				02782E6F27754D54002076BD /* SettingsSection.swift */,
+				02782E7327756284002076BD /* SettingRepository.swift */,
+				02782E7727757104002076BD /* UserInfo.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		02782E6A277529A5002076BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02782E7527756816002076BD /* UserInfoView.swift */,
+				02782E792775729E002076BD /* SettingTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,22 +398,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02782E7A2775729E002076BD /* SettingTableViewCell.swift in Sources */,
 				02782E5727746A73002076BD /* HttpMethod.swift in Sources */,
 				02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */,
 				02782E51277464EB002076BD /* ListError.swift in Sources */,
 				02782E1427745FF5002076BD /* AppDelegate.swift in Sources */,
 				02782E6627751915002076BD /* UIViewControllerExtension.swift.swift in Sources */,
 				02782E5B27747428002076BD /* RepositorySearchResultDto.swift in Sources */,
+				02782E7027754D54002076BD /* SettingsSection.swift in Sources */,
 				02782E622775176F002076BD /* RepositoryTableViewCell.swift in Sources */,
 				02782E5527746741002076BD /* GitHubApi.swift in Sources */,
-				02782E6827752271002076BD /* DefaultTableHeaderView.swift in Sources */,
+				02782E6E27754CC4002076BD /* SettingsViewModel.swift in Sources */,
+				02782E7427756285002076BD /* SettingRepository.swift in Sources */,
 				02782E4F277464A6002076BD /* RepositoryService.swift in Sources */,
 				02782E4C27746447002076BD /* Repository.swift in Sources */,
 				02782E4A277463D5002076BD /* RepositoriesListViewModel.swift in Sources */,
+				02782E6C277529C3002076BD /* SettingsViewController.swift in Sources */,
 				02782E532774662F002076BD /* RepositoryDto.swift in Sources */,
 				02782E6427751822002076BD /* TableViewCellExtensions.swift in Sources */,
 				02782E5927746AB4002076BD /* ApiError.swift.swift in Sources */,
 				02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */,
+				02782E7827757104002076BD /* UserInfo.swift in Sources */,
+				02782E7C27758068002076BD /* Configurable.swift in Sources */,
+				02782E7627756816002076BD /* UserInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ protocol RepositoriesListViewModelDelegate: AnyObject {
 protocol RepositoriesListViewModelPortocol {
     var delegate: RepositoriesListViewModelDelegate? { get set }
     var items: [Repository] { get }
-    var header: String { get }
+    var title: String { get }
     func loadList()
 }
 
@@ -29,7 +29,7 @@ class DisplayListViewModel: RepositoriesListViewModelPortocol {
         self.repositoryWebServcie = repositoryWebServcie
     }
     
-    var header: String = "Repositories"
+    var title: String = "Repositories"
     
     var items: [Repository] = []
     

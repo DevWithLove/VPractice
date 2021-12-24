@@ -10,7 +10,6 @@ import UIKit
 class RepositoryTableViewCell: UITableViewCell {
     
     // MARK:- Constants
-    private let nameFont = UIFont.boldSystemFont(ofSize: 20)
     private let elementSpace: CGFloat = 5
     private let padding: CGFloat = 20
     
@@ -18,7 +17,7 @@ class RepositoryTableViewCell: UITableViewCell {
    
     lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.font = nameFont
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.numberOfLines = 0
         return label
     }()

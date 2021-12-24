@@ -19,8 +19,8 @@ class RepositoriesViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.allowsSelection = false
+        tableView.tableHeaderView = UIView()
         tableView.regisger(cellClass: RepositoryTableViewCell.self)
-        tableView.regisger(viewClass: DefaultTableHeaderView.self)
         return tableView
     }()
     
@@ -41,6 +41,8 @@ class RepositoriesViewController: UIViewController {
     }
     
     private func setupUI() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = viewModel.title
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
@@ -76,19 +78,19 @@ extension RepositoriesViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryTableViewCell.cellId) as! RepositoryTableViewCell
-        let item = getItem(indexPath: indexPath)
-        cell.nameLabel.text = item.name
-        cell.descriptionLabel.text = item.description
+        let repository = getItem(indexPath: indexPath)
+        cell.configureWithModel(repository)
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: DefaultTableHeaderView.cellId) as! DefaultTableHeaderView
-        view.titleLabel.text = viewModel.header
-        return view
     }
 
     private func getItem(indexPath: IndexPath) -> Repository {
         return viewModel.items[indexPath.row]
+    }
+}
+
+extension RepositoryTableViewCell: Configurable {
+    func configureWithModel(_ repository: Repository) {
+        nameLabel.text = repository.name
+        descriptionLabel.text = repository.description
     }
 }
