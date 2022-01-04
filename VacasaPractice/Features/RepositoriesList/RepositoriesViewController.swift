@@ -32,7 +32,10 @@ class RepositoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        viewModel.loadList()
+        //viewModel.loadList()
+        Task {
+            await viewModel.loadListAsync()
+        }
     }
     
     private func setup() {

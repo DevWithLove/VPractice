@@ -78,6 +78,23 @@ extension URLRequest {
             
         }.resume()
     }
+    
+    func send<T: Decodable>() async throws -> T {
+        do {
+            let (data, response)  = try await URLSession.shared.data(for: self, delegate: nil)
+            
+            guard let response = response as? HTTPURLResponse, response.isValidResponse else {
+                throw ApiError.invalidedResponse
+            }
+            
+            let value = try JSONDecoder().decode(T.self, from: data)
+            return value
+        } catch is DecodingError {
+            throw ApiError.decodingError
+        } catch {
+            throw ApiError.unknown(error)
+        }
+    }
 }
 
 

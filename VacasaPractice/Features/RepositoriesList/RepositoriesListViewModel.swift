@@ -17,6 +17,7 @@ protocol RepositoriesListViewModelPortocol {
     var items: [Repository] { get }
     var title: String { get }
     func loadList()
+    func loadListAsync() async
 }
 
 class RepositoriesListViewModel: RepositoriesListViewModelPortocol {
@@ -39,11 +40,21 @@ class RepositoriesListViewModel: RepositoriesListViewModelPortocol {
             guard let self = self else { return }
             switch result {
             case .success(let resultDto):
-                self.items = resultDto.items!.compactMap { $0.toReposiotry() }
+                self.items = resultDto.items?.compactMap { $0.toReposiotry() } ?? []
                 self.delegate?.didLoadData()
             case .failure(_) :
                 self.delegate?.displayError(.fetchRepositoriesFailed)
             }
+        }
+    }
+    
+    func loadListAsync() async {
+        do {
+            let result = try await repositoryWebServcie.fetch()
+            items = result.items?.compactMap { $0.toReposiotry() } ?? []
+            delegate?.didLoadData()
+        } catch {
+            delegate?.displayError(.fetchRepositoriesFailed)
         }
     }
 }
