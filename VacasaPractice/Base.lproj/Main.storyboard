@@ -31,12 +31,14 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="KAb-8T-aC1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mOE-D0-aNM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="F02-Ut-afB" kind="relationship" relationship="viewControllers" id="Oud-h6-Qol"/>
                         <segue destination="G2g-rs-1r7" kind="relationship" relationship="viewControllers" id="1zh-cs-P2f"/>
+                        <segue destination="dlx-Cw-Tnc" kind="relationship" relationship="viewControllers" id="z8x-SQ-loq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1FK-XS-qPS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -96,7 +98,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2m-Uh-n7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="982.60869565217399" y="378.34821428571428"/>
+            <point key="canvasLocation" x="1339" y="433"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="8Fx-1k-5hI">
+            <objects>
+                <viewController id="dlx-Cw-Tnc" customClass="RepositoryListHostingViewController" customModule="VacasaPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xi4-Mq-uXF" customClass="RepositoryList">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yDC-cP-tKd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="hWB-Yv-uGj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0Q-5F-lZj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="931"/>
         </scene>
     </scenes>
     <resources>
