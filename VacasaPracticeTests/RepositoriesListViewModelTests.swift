@@ -57,7 +57,6 @@ class RepositoriesListViewModelTests: XCTestCase {
 
 
 class MockWebServcie: RepositoryServiceProtocol {
-    
     typealias RepositoryServiceMockResult = Result<RepositorySearchResultDto, ApiError>
     private let expectedResult: RepositoryServiceMockResult
     
@@ -67,6 +66,15 @@ class MockWebServcie: RepositoryServiceProtocol {
     
     func fetch(completion: @escaping RepositoryServiceResult) {
         completion(expectedResult)
+    }
+    
+    func fetch() async throws -> RepositorySearchResultDto {
+        switch expectedResult {
+        case .success(let result):
+            return result
+        case .failure(let error):
+            throw error
+        }
     }
 }
 

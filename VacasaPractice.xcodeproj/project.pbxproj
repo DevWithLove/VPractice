@@ -41,6 +41,9 @@
 		02C820E52795028300F368B9 /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E42795028300F368B9 /* RepositoryListView.swift */; };
 		02C820E7279504CA00F368B9 /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E6279504CA00F368B9 /* RepositoryListViewModel.swift */; };
 		02C820E927950FAC00F368B9 /* RepositoryListHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E827950FAC00F368B9 /* RepositoryListHostingViewController.swift */; };
+		02C820EC2797E2CB00F368B9 /* BundleExtensions.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820EB2797E2CB00F368B9 /* BundleExtensions.swift.swift */; };
+		02C820F02797E38500F368B9 /* searchRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C820EF2797E38500F368B9 /* searchRepository.json */; };
+		02C820F22797E58800F368B9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820F12797E58800F368B9 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,9 @@
 		02C820E42795028300F368B9 /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
 		02C820E6279504CA00F368B9 /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
 		02C820E827950FAC00F368B9 /* RepositoryListHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListHostingViewController.swift; sourceTree = "<group>"; };
+		02C820EB2797E2CB00F368B9 /* BundleExtensions.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift.swift; sourceTree = "<group>"; };
+		02C820EF2797E38500F368B9 /* searchRepository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchRepository.json; sourceTree = "<group>"; };
+		02C820F12797E58800F368B9 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 		02782E0727745FF4002076BD = {
 			isa = PBXGroup;
 			children = (
+				02C820EA2797E20800F368B9 /* Preview Content */,
 				02782E1227745FF4002076BD /* VacasaPractice */,
 				02782E2927745FF7002076BD /* VacasaPracticeTests */,
 				02782E3327745FF7002076BD /* VacasaPracticeUITests */,
@@ -215,6 +222,7 @@
 				02782E6327751822002076BD /* TableViewCellExtensions.swift */,
 				02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */,
 				02782E7B27758068002076BD /* Configurable.swift */,
+				02C820EB2797E2CB00F368B9 /* BundleExtensions.swift.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -279,6 +287,23 @@
 				02C820E827950FAC00F368B9 /* RepositoryListHostingViewController.swift */,
 			);
 			path = RepositoriesListSwiftUI;
+			sourceTree = "<group>";
+		};
+		02C820EA2797E20800F368B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02C820ED2797E33900F368B9 /* Json */,
+				02C820F12797E58800F368B9 /* MockData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02C820ED2797E33900F368B9 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				02C820EF2797E38500F368B9 /* searchRepository.json */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +419,7 @@
 				02782E2027745FF6002076BD /* LaunchScreen.storyboard in Resources */,
 				02782E1D27745FF6002076BD /* Assets.xcassets in Resources */,
 				02782E1B27745FF5002076BD /* Main.storyboard in Resources */,
+				02C820F02797E38500F368B9 /* searchRepository.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C820F22797E58800F368B9 /* MockData.swift in Sources */,
 				02782E7A2775729E002076BD /* SettingTableViewCell.swift in Sources */,
 				02782E5727746A73002076BD /* HttpMethod.swift in Sources */,
 				02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */,
@@ -442,6 +469,7 @@
 				02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */,
 				02782E7827757104002076BD /* UserInfo.swift in Sources */,
 				02782E7C27758068002076BD /* Configurable.swift in Sources */,
+				02C820EC2797E2CB00F368B9 /* BundleExtensions.swift.swift in Sources */,
 				02C820E32795011100F368B9 /* RepositoryListRow.swift in Sources */,
 				02782E7627756816002076BD /* UserInfoView.swift in Sources */,
 				02C820E7279504CA00F368B9 /* RepositoryListViewModel.swift in Sources */,
@@ -623,6 +651,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Preview\\ Content";
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VacasaPractice/Info.plist;
@@ -651,6 +680,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Preview\\ Content";
 				DEVELOPMENT_TEAM = 3PHP3XA64F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VacasaPractice/Info.plist;

@@ -15,6 +15,8 @@ protocol RepositoryServiceProtocol {
 }
 
 class RepositoryWebService: RepositoryServiceProtocol {
+    
+    @available(*, deprecated, message: "Prefer async alternative instead" )
     func fetch(completion: @escaping RepositoryServiceResult) {
         do {
             let parameters = GitHubApi.SearchParameters(qualifiers: "org:vacasaoss",
@@ -59,5 +61,15 @@ class RepositoryWebService: RepositoryServiceProtocol {
         })
         
         return result
+    }
+}
+
+final class MockRepositoryWebService: RepositoryServiceProtocol {
+    func fetch(completion: @escaping RepositoryServiceResult) {
+        completion(.success(RepositorySearchResultDto.mockRepositorySearchResultDto))
+    }
+    
+    func fetch() async throws -> RepositorySearchResultDto {
+        RepositorySearchResultDto.mockRepositorySearchResultDto
     }
 }
