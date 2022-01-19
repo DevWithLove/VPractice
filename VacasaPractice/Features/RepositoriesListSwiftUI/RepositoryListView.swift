@@ -13,11 +13,26 @@ struct RepositoryListView: View {
         NavigationView {
             List(viewModel.repositories, id: \.name) { repository in
                 RepositoryListRow(repository: repository)
-            }.navigationTitle("Repositories")
+            }
+            .listStyle(.plain)
+            .overlay(content: {
+                if viewModel.isLoading {
+                    ProgressView()
+                }
+            })
+            .navigationTitle("Repositories")
         }
         .task {
-           try? await viewModel.loadData()
+            await viewModel.loadData()
         }
+        .alert("Application Error", isPresented: $viewModel.showAlert, actions: {
+            Button("OK") {}
+        }, message: {
+            if let errorMessage = viewModel.errorMessage {
+                Text(errorMessage)
+            }
+        })
+   
     }
 }
 

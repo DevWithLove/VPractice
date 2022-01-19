@@ -58,7 +58,7 @@ class RepositoriesViewController: UIViewController {
 extension RepositoriesViewController: RepositoriesListViewModelDelegate {
     func displayError(_ error: ListError) {
         DispatchQueue.main.async {
-            self.presentMessage(message: error.localizedMessage)
+           self.presentMessage(message: error.localizedMessage)
         }
     }
     
