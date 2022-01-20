@@ -24,20 +24,22 @@ final class RepositoryListViewModel: ObservableObject {
     @MainActor
     func loadData() async {
         isLoading.toggle()
+        
+        defer {
+            isLoading.toggle()
+        }
+        
         do {
             repositories = try await repositoryService.fetch().items?.compactMap{
                 $0.toReposiotry()
             } ?? []
-            isLoading.toggle()
         }
         catch let error as ApiError {
             showAlert = true
-            isLoading.toggle()
             errorMessage = error.errorDescription
         }
         catch {
             showAlert = true
-            isLoading.toggle()
             errorMessage = "Unknown error"
         }
     }
