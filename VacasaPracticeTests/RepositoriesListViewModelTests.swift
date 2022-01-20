@@ -11,17 +11,14 @@ import XCTest
 class RepositoriesListViewModelTests: XCTestCase {
 
     let timeout: TimeInterval = 5
-    var testExpectation: XCTestExpectation?
-    
-    override func setUp() {
-        testExpectation = self.expectation(description: "CallBack")
-    }
     
     func testLoadDataSuccess() throws {
         
         // Arrange
+        let testExpectation = self.expectation(description: "CallBack")
+
         let mockWebService = MockWebServcie(expectedResult: .success(RepositorySearchResultDto(totalCount: 1, isIncompleted: false, items: [RepositoryDto(name: "Repo1", description: "description")])))
-        let view = MockListViewController(testExpection: testExpectation!)
+        let view = MockListViewController(testExpection: testExpectation)
         let viewModel = RepositoriesListViewModel(repositoryWebServcie: mockWebService)
         viewModel.delegate = view
         
@@ -39,8 +36,10 @@ class RepositoriesListViewModelTests: XCTestCase {
     func testLoadDataFailed() throws {
         
         // Arrange
+        let testExpectation = self.expectation(description: "CallBack")
+        
         let mockWebService = MockWebServcie(expectedResult: .failure(.notFound))
-        let view = MockListViewController(testExpection: testExpectation!)
+        let view = MockListViewController(testExpection: testExpectation)
         let viewModel = RepositoriesListViewModel(repositoryWebServcie: mockWebService)
         viewModel.delegate = view
         
@@ -49,6 +48,42 @@ class RepositoriesListViewModelTests: XCTestCase {
         
         // Assert
         waitForExpectations(timeout: timeout, handler: nil)
+        XCTAssertTrue(viewModel.items.isEmpty)
+        XCTAssertFalse(view.isDataLoaded)
+        XCTAssertEqual(view.errorMessage, "Sorry, we are unable to get the repositories, please try again later.")
+    }
+    
+    
+    func testLoadDataSuccessAsync() async throws {
+        
+        // Arrange
+        let mockWebService = MockWebServcie(expectedResult: .success(RepositorySearchResultDto(totalCount: 1, isIncompleted: false, items: [RepositoryDto(name: "Repo1", description: "description")])))
+        let view = MockListViewController()
+        let viewModel = RepositoriesListViewModel(repositoryWebServcie: mockWebService)
+        viewModel.delegate = view
+        
+        // Act
+        await viewModel.loadListAsync()
+        
+        // Assert
+        XCTAssertTrue(view.isDataLoaded)
+        XCTAssertNil(view.errorMessage)
+        XCTAssertEqual(viewModel.items[0].name, "Repo1")
+        XCTAssertEqual(viewModel.items[0].description, "description")
+    }
+    
+    func testLoadDataFailedAsync() async throws {
+        
+        // Arrange
+        let mockWebService = MockWebServcie(expectedResult: .failure(.notFound))
+        let view = MockListViewController()
+        let viewModel = RepositoriesListViewModel(repositoryWebServcie: mockWebService)
+        viewModel.delegate = view
+        
+        // Act
+        await viewModel.loadListAsync()
+        
+        // Assert
         XCTAssertTrue(viewModel.items.isEmpty)
         XCTAssertFalse(view.isDataLoaded)
         XCTAssertEqual(view.errorMessage, "Sorry, we are unable to get the repositories, please try again later.")
@@ -79,22 +114,22 @@ class MockWebServcie: RepositoryServiceProtocol {
 }
 
 class MockListViewController: RepositoriesListViewModelDelegate {
-    private let testExpection: XCTestExpectation
+    private let testExpection: XCTestExpectation?
     
     public private(set) var isDataLoaded: Bool = false
     public private(set) var errorMessage: String? = nil
     
-    init(testExpection: XCTestExpectation) {
+    init(testExpection: XCTestExpectation? = nil) {
         self.testExpection = testExpection
     }
     
     func displayError(_ error: ListError) {
         errorMessage = error.localizedMessage
-        testExpection.fulfill()
+        testExpection?.fulfill()
     }
     
     func didLoadData() {
         isDataLoaded = true
-        testExpection.fulfill()
+        testExpection?.fulfill()
     }
 }

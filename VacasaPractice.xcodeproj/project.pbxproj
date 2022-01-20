@@ -44,6 +44,7 @@
 		02C820EC2797E2CB00F368B9 /* BundleExtensions.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820EB2797E2CB00F368B9 /* BundleExtensions.swift.swift */; };
 		02C820F02797E38500F368B9 /* searchRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C820EF2797E38500F368B9 /* searchRepository.json */; };
 		02C820F22797E58800F368B9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820F12797E58800F368B9 /* MockData.swift */; };
+		02C820F42798F8DB00F368B9 /* ScreenPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820F32798F8DA00F368B9 /* ScreenPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		02C820EB2797E2CB00F368B9 /* BundleExtensions.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift.swift; sourceTree = "<group>"; };
 		02C820EF2797E38500F368B9 /* searchRepository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchRepository.json; sourceTree = "<group>"; };
 		02C820F12797E58800F368B9 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		02C820F32798F8DA00F368B9 /* ScreenPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */,
 				02782E7B27758068002076BD /* Configurable.swift */,
 				02C820EB2797E2CB00F368B9 /* BundleExtensions.swift.swift */,
+				02C820F32798F8DA00F368B9 /* ScreenPreview.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C820F42798F8DB00F368B9 /* ScreenPreview.swift in Sources */,
 				02C820F22797E58800F368B9 /* MockData.swift in Sources */,
 				02782E7A2775729E002076BD /* SettingTableViewCell.swift in Sources */,
 				02782E5727746A73002076BD /* HttpMethod.swift in Sources */,
@@ -660,6 +664,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -689,6 +694,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

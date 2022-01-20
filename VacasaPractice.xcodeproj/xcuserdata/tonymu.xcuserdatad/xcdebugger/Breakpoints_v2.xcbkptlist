@@ -68,5 +68,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC1BE23E-9EE9-4D64-A6C4-F21232E90048"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VacasaPracticeTests/RepositoriesListViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "testLoadDataSuccessAsync()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DC1BE23E-9EE9-4D64-A6C4-F21232E90048 - 3efaebc49ebe3875"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VacasaPracticeTests.RepositoriesListViewModelTests.testLoadDataSuccessAsync() async throws -&gt; ()"
+                  moduleName = "VacasaPracticeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tonymu/Dev/VacasaPractice/VacasaPracticeTests/RepositoriesListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "683">
+               </Location>
+               <Location
+                  uuid = "DC1BE23E-9EE9-4D64-A6C4-F21232E90048 - 3eb77f420650ed6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for VacasaPracticeTests.RepositoriesListViewModelTests.testLoadDataSuccessAsync() async throws -&gt; ()"
+                  moduleName = "VacasaPracticeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tonymu/Dev/VacasaPractice/VacasaPracticeTests/RepositoriesListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "81">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACEF4694-74D2-4BE6-9C06-AE61F37F245C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VacasaPracticeTests/RepositoriesListViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "testLoadDataSuccessAsync()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

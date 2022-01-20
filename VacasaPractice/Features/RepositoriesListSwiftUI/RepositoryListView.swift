@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RepositoryListView: View {
-    @StateObject var viewModel = RepositoryListViewModel(repositoryService: RepositoryWebService())
+    @StateObject var viewModel = RepositoryListViewModel(repositoryService: MockRepositoryWebService())
     var body: some View {
         NavigationView {
             List(viewModel.repositories, id: \.name) { repository in
@@ -22,6 +22,7 @@ struct RepositoryListView: View {
             })
             .navigationTitle("Repositories")
         }
+        .padding()
         .task {
             await viewModel.loadData()
         }
@@ -38,6 +39,6 @@ struct RepositoryListView: View {
 
 struct RepositoryListView_Previews: PreviewProvider {
     static var previews: some View {
-        RepositoryListView()
+        RepositoryListView().previewAsScreen()
     }
 }
