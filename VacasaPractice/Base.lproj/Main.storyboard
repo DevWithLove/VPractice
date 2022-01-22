@@ -39,6 +39,7 @@
                         <segue destination="F02-Ut-afB" kind="relationship" relationship="viewControllers" id="Oud-h6-Qol"/>
                         <segue destination="G2g-rs-1r7" kind="relationship" relationship="viewControllers" id="1zh-cs-P2f"/>
                         <segue destination="dlx-Cw-Tnc" kind="relationship" relationship="viewControllers" id="z8x-SQ-loq"/>
+                        <segue destination="Fvs-jM-s0b" kind="relationship" relationship="viewControllers" id="2Y0-PQ-U9k"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1FK-XS-qPS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -98,9 +99,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2m-Uh-n7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339" y="433"/>
+            <point key="canvasLocation" x="983" y="378"/>
         </scene>
-        <!--Item-->
+        <!--RepositoryList SwiftUI-->
         <scene sceneID="8Fx-1k-5hI">
             <objects>
                 <viewController id="dlx-Cw-Tnc" customClass="RepositoryListHostingViewController" customModule="VacasaPractice" customModuleProvider="target" sceneMemberID="viewController">
@@ -110,17 +111,36 @@
                         <viewLayoutGuide key="safeArea" id="yDC-cP-tKd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hWB-Yv-uGj"/>
+                    <tabBarItem key="tabBarItem" title="RepositoryList SwiftUI" image="list.bullet.rectangle.portrait.fill" catalog="system" id="hWB-Yv-uGj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0Q-5F-lZj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519" y="931"/>
+            <point key="canvasLocation" x="1304" y="1203"/>
+        </scene>
+        <!--SwiftUI-->
+        <scene sceneID="Ps7-8Z-vYU">
+            <objects>
+                <viewController id="Fvs-jM-s0b" customClass="SampleUIHostingViewController" customModule="VacasaPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uru-Du-HuD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AYN-Uw-SwH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SwiftUI" image="swift" catalog="system" id="wHJ-tK-02L"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6BT-pK-Irn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-570" y="751"/>
         </scene>
     </scenes>
     <resources>
         <image name="gear.circle.fill" catalog="system" width="128" height="121"/>
         <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="list.bullet.rectangle.portrait.fill" catalog="system" width="115" height="128"/>
+        <image name="swift" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

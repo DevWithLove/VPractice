@@ -37,6 +37,11 @@
 		02782E7827757104002076BD /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E7727757104002076BD /* UserInfo.swift */; };
 		02782E7A2775729E002076BD /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E792775729E002076BD /* SettingTableViewCell.swift */; };
 		02782E7C27758068002076BD /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E7B27758068002076BD /* Configurable.swift */; };
+		027A184E279CAB4400CCCF39 /* ExpandableButtonPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A184D279CAB4400CCCF39 /* ExpandableButtonPanel.swift */; };
+		027A1851279CB16E00CCCF39 /* SampleUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A1850279CB16E00CCCF39 /* SampleUIView.swift */; };
+		027A1853279CB35300CCCF39 /* SampleUIHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A1852279CB35300CCCF39 /* SampleUIHostingViewController.swift */; };
+		027A1858279CB74000CCCF39 /* ExpandableButtonRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A1857279CB74000CCCF39 /* ExpandableButtonRootView.swift */; };
+		028E153A279A327E0008949E /* VacasaPractices.docc in Sources */ = {isa = PBXBuildFile; fileRef = 028E1539279A327E0008949E /* VacasaPractices.docc */; };
 		02C820E32795011100F368B9 /* RepositoryListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E22795011100F368B9 /* RepositoryListRow.swift */; };
 		02C820E52795028300F368B9 /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E42795028300F368B9 /* RepositoryListView.swift */; };
 		02C820E7279504CA00F368B9 /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E6279504CA00F368B9 /* RepositoryListViewModel.swift */; };
@@ -98,6 +103,11 @@
 		02782E7727757104002076BD /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		02782E792775729E002076BD /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		02782E7B27758068002076BD /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		027A184D279CAB4400CCCF39 /* ExpandableButtonPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableButtonPanel.swift; sourceTree = "<group>"; };
+		027A1850279CB16E00CCCF39 /* SampleUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUIView.swift; sourceTree = "<group>"; };
+		027A1852279CB35300CCCF39 /* SampleUIHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUIHostingViewController.swift; sourceTree = "<group>"; };
+		027A1857279CB74000CCCF39 /* ExpandableButtonRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableButtonRootView.swift; sourceTree = "<group>"; };
+		028E1539279A327E0008949E /* VacasaPractices.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VacasaPractices.docc; sourceTree = "<group>"; };
 		02C820E22795011100F368B9 /* RepositoryListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListRow.swift; sourceTree = "<group>"; };
 		02C820E42795028300F368B9 /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
 		02C820E6279504CA00F368B9 /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
@@ -137,10 +147,11 @@
 		02782E0727745FF4002076BD = {
 			isa = PBXGroup;
 			children = (
-				02C820EA2797E20800F368B9 /* Preview Content */,
 				02782E1227745FF4002076BD /* VacasaPractice */,
 				02782E2927745FF7002076BD /* VacasaPracticeTests */,
 				02782E3327745FF7002076BD /* VacasaPracticeUITests */,
+				02C820EA2797E20800F368B9 /* Preview Content */,
+				028E1539279A327E0008949E /* VacasaPractices.docc */,
 				02782E1127745FF4002076BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,6 +169,7 @@
 		02782E1227745FF4002076BD /* VacasaPractice */ = {
 			isa = PBXGroup;
 			children = (
+				027A184C279CAB0700CCCF39 /* SwiftUI */,
 				02782E4327746320002076BD /* Core */,
 				02782E4427746329002076BD /* Features */,
 				02782E1327745FF5002076BD /* AppDelegate.swift */,
@@ -199,6 +211,7 @@
 		02782E4427746329002076BD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				027A184F279CAEA900CCCF39 /* SwiftUISample */,
 				02C820E1279500F200F368B9 /* RepositoriesListSwiftUI */,
 				02782E4727746354002076BD /* RepositoriesList */,
 				02782E692775298F002076BD /* Settings */,
@@ -279,6 +292,32 @@
 				02782E792775729E002076BD /* SettingTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				027A1854279CB6E800CCCF39 /* ExpandableButtonPanel */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		027A184F279CAEA900CCCF39 /* SwiftUISample */ = {
+			isa = PBXGroup;
+			children = (
+				027A1850279CB16E00CCCF39 /* SampleUIView.swift */,
+				027A1852279CB35300CCCF39 /* SampleUIHostingViewController.swift */,
+			);
+			path = SwiftUISample;
+			sourceTree = "<group>";
+		};
+		027A1854279CB6E800CCCF39 /* ExpandableButtonPanel */ = {
+			isa = PBXGroup;
+			children = (
+				027A184D279CAB4400CCCF39 /* ExpandableButtonPanel.swift */,
+				027A1857279CB74000CCCF39 /* ExpandableButtonRootView.swift */,
+			);
+			path = ExpandableButtonPanel;
 			sourceTree = "<group>";
 		};
 		02C820E1279500F200F368B9 /* RepositoriesListSwiftUI */ = {
@@ -447,6 +486,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028E153A279A327E0008949E /* VacasaPractices.docc in Sources */,
+				027A184E279CAB4400CCCF39 /* ExpandableButtonPanel.swift in Sources */,
 				02C820F42798F8DB00F368B9 /* ScreenPreview.swift in Sources */,
 				02C820F22797E58800F368B9 /* MockData.swift in Sources */,
 				02782E7A2775729E002076BD /* SettingTableViewCell.swift in Sources */,
@@ -463,6 +504,8 @@
 				02782E6E27754CC4002076BD /* SettingsViewModel.swift in Sources */,
 				02782E7427756285002076BD /* SettingRepository.swift in Sources */,
 				02C820E52795028300F368B9 /* RepositoryListView.swift in Sources */,
+				027A1851279CB16E00CCCF39 /* SampleUIView.swift in Sources */,
+				027A1853279CB35300CCCF39 /* SampleUIHostingViewController.swift in Sources */,
 				02782E4F277464A6002076BD /* RepositoryService.swift in Sources */,
 				02782E4C27746447002076BD /* Repository.swift in Sources */,
 				02782E4A277463D5002076BD /* RepositoriesListViewModel.swift in Sources */,
@@ -470,6 +513,7 @@
 				02782E532774662F002076BD /* RepositoryDto.swift in Sources */,
 				02782E6427751822002076BD /* TableViewCellExtensions.swift in Sources */,
 				02782E5927746AB4002076BD /* ApiError.swift.swift in Sources */,
+				027A1858279CB74000CCCF39 /* ExpandableButtonRootView.swift in Sources */,
 				02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */,
 				02782E7827757104002076BD /* UserInfo.swift in Sources */,
 				02782E7C27758068002076BD /* Configurable.swift in Sources */,
@@ -672,6 +716,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = devwithlove.VacasaPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -702,6 +747,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = devwithlove.VacasaPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
