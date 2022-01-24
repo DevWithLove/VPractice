@@ -12,3 +12,9 @@ extension RepositorySearchResultDto {
         Bundle.main.decode(RepositorySearchResultDto.self, from: "searchRepository.json")
     }
 }
+
+extension Hike {
+    static var mockHikes: [Hike] {
+        Bundle.main.decode([Hike].self, from: "hikeData.json")
+    }
+}

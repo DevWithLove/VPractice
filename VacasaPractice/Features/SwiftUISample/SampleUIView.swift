@@ -9,11 +9,15 @@ import SwiftUI
 
 enum SampleUIItems: String, CaseIterable {
     case expandableButton = "Expandable Button"
+    case hikeView = "Hike view"
     
+    @ViewBuilder
     func getDestiationView() -> some View {
         switch(self) {
         case .expandableButton:
-            return ExpandableButtonRootView()
+            ExpandableButtonRootView()
+        case .hikeView:
+            HikeView(hike: Hike.mockHikes[0])
         }
     }
 }
