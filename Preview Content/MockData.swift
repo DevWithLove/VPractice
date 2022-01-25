@@ -18,3 +18,9 @@ extension Hike {
         Bundle.main.decode([Hike].self, from: "hikeData.json")
     }
 }
+
+extension Landmark {
+    static var mockData: [Landmark] {
+        Bundle.main.decode([Landmark].self, from: "landmarkData.json")
+    }
+}
