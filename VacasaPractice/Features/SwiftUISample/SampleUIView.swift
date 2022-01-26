@@ -11,6 +11,7 @@ enum SampleUIItems: String, CaseIterable {
     case expandableButton = "Expandable Button"
     case hikeView = "Hike view"
     case landmark = "Landmarks"
+    case landmarkCategory = "Landmarks categories"
     
     @ViewBuilder
     func getDestiationView() -> some View {
@@ -21,6 +22,8 @@ enum SampleUIItems: String, CaseIterable {
             HikeView(hike: Hike.mockHikes[0])
         case .landmark:
             LandmarkContentView()
+        case .landmarkCategory:
+            CategoryHome().environmentObject(ModelData())
         }
     }
 }

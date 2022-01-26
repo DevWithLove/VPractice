@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct CategoryHome: View {
+    @EnvironmentObject var modelData: ModelData
     var body: some View {
-        NavigationView {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                .navigationTitle("Featured")
+        List {
+            
+            modelData.features[0].image
+                .resizable()
+                .scaledToFill()
+                .frame(height: 200)
+                .clipped()
+            
+            ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
+                CategoryRow(categoryName: key, items: modelData.categories[key]!)
+            }
+            .listRowInsets(EdgeInsets())
         }
+        .listStyle(.plain)
+        .navigationTitle("Featured")
     }
 }
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryHome().previewAsScreen()
+        CategoryHome()
+            .environmentObject(ModelData())
+            .previewAsScreen()
     }
 }
