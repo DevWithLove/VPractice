@@ -23,7 +23,7 @@ enum SampleUIItems: String, CaseIterable {
         case .landmark:
             LandmarkContentView()
         case .landmarkCategory:
-            CategoryHome().environmentObject(ModelData())
+            CategoryHome().environmentObject(LandmarkModelData())
         }
     }
 }

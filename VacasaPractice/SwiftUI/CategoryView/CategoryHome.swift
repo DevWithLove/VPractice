@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CategoryHome: View {
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var modelData: LandmarkModelData
+    @State private var showingProfile = false
     var body: some View {
         List {
             
@@ -23,15 +24,25 @@ struct CategoryHome: View {
             }
             .listRowInsets(EdgeInsets())
         }
-        .listStyle(.plain)
+        .listStyle(.inset)
         .navigationTitle("Featured")
+        .toolbar {
+            Button {
+                showingProfile.toggle()
+            } label: {
+                Label("User Profile", systemImage: "person.crop.circle")
+            }
+        }
+        .sheet(isPresented: $showingProfile) {
+            ProfileHost()
+        }
     }
 }
 
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
         CategoryHome()
-            .environmentObject(ModelData())
+            .environmentObject(LandmarkModelData())
             .previewAsScreen()
     }
 }

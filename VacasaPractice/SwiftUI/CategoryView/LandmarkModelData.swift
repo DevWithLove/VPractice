@@ -8,8 +8,9 @@
 import Foundation
 import Combine
 
-final class ModelData: ObservableObject {
+final class LandmarkModelData: ObservableObject {
     @Published var landmarks: [Landmark] = Landmark.mockData
+    @Published var profile = Profile.default
     
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }

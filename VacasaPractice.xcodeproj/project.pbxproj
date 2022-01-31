@@ -70,6 +70,10 @@
 		02E809E0279FDF4800945E91 /* LandmarkModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809DF279FDF4800945E91 /* LandmarkModelData.swift */; };
 		02E809E227A1209600945E91 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809E127A1209600945E91 /* CategoryRow.swift */; };
 		02E809E427A1230100945E91 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809E327A1230100945E91 /* CategoryItem.swift */; };
+		02E809E627A2294D00945E91 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809E527A2294D00945E91 /* Profile.swift */; };
+		02FA9D5127A22B91003344BC /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9D5027A22B91003344BC /* ProfileHost.swift */; };
+		02FA9D5327A22EEA003344BC /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9D5227A22EEA003344BC /* ProfileSummary.swift */; };
+		02FA9D5527A2375C003344BC /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9D5427A2375C003344BC /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +160,10 @@
 		02E809DF279FDF4800945E91 /* LandmarkModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkModelData.swift; sourceTree = "<group>"; };
 		02E809E127A1209600945E91 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		02E809E327A1230100945E91 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		02E809E527A2294D00945E91 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		02FA9D5027A22B91003344BC /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		02FA9D5227A22EEA003344BC /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		02FA9D5427A2375C003344BC /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,6 +446,7 @@
 			children = (
 				02E809DC279FDBE200945E91 /* ListViewModel.swift */,
 				02E809C3279FDA1300945E91 /* Landmark.swift */,
+				02E809E527A2294D00945E91 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -445,6 +454,7 @@
 		02E809C9279FDB3F00945E91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				02FA9D4F27A22B7A003344BC /* Profile */,
 				02E809CB279FDB5B00945E91 /* CircleImage.swift.swift */,
 				02E809D2279FDB5C00945E91 /* LandmarkContentView.swift */,
 				02E809CC279FDB5B00945E91 /* FavoriteButton.swift */,
@@ -454,6 +464,16 @@
 				02E809D1279FDB5C00945E91 /* MapView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		02FA9D4F27A22B7A003344BC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				02FA9D5027A22B91003344BC /* ProfileHost.swift */,
+				02FA9D5227A22EEA003344BC /* ProfileSummary.swift */,
+				02FA9D5427A2375C003344BC /* ProfileEditor.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -621,10 +641,13 @@
 				02782E5527746741002076BD /* GitHubApi.swift in Sources */,
 				02E809D3279FDB5C00945E91 /* LandmarkList.swift in Sources */,
 				02782E6E27754CC4002076BD /* SettingsViewModel.swift in Sources */,
+				02E809E627A2294D00945E91 /* Profile.swift in Sources */,
+				02FA9D5527A2375C003344BC /* ProfileEditor.swift in Sources */,
 				02782E7427756285002076BD /* SettingRepository.swift in Sources */,
 				02C820E52795028300F368B9 /* RepositoryListView.swift in Sources */,
 				027A1851279CB16E00CCCF39 /* SampleUIView.swift in Sources */,
 				027A1853279CB35300CCCF39 /* SampleUIHostingViewController.swift in Sources */,
+				02FA9D5327A22EEA003344BC /* ProfileSummary.swift in Sources */,
 				02782E4F277464A6002076BD /* RepositoryService.swift in Sources */,
 				02782E4C27746447002076BD /* Repository.swift in Sources */,
 				02782E4A277463D5002076BD /* RepositoriesListViewModel.swift in Sources */,
@@ -638,6 +661,7 @@
 				02782E7827757104002076BD /* UserInfo.swift in Sources */,
 				02E809C1279FD99F00945E91 /* CategoryHome.swift in Sources */,
 				02E809DB279FDB5C00945E91 /* LandmarkContentView.swift in Sources */,
+				02FA9D5127A22B91003344BC /* ProfileHost.swift in Sources */,
 				02E809DD279FDBE200945E91 /* ListViewModel.swift in Sources */,
 				02E809C4279FDA1300945E91 /* Landmark.swift in Sources */,
 				02782E7C27758068002076BD /* Configurable.swift in Sources */,

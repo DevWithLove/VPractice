@@ -35,7 +35,7 @@ struct CategoryRow: View {
 }
 
 struct CategoryRow_Previews: PreviewProvider {
-    static let landmarks = ModelData().landmarks
+    static let landmarks = LandmarkModelData().landmarks
     static var previews: some View {
         CategoryRow(categoryName: landmarks[0].category.rawValue, items: Array(landmarks))
     }
