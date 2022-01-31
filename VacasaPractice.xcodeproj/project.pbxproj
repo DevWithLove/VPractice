@@ -74,6 +74,8 @@
 		02FA9D5127A22B91003344BC /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9D5027A22B91003344BC /* ProfileHost.swift */; };
 		02FA9D5327A22EEA003344BC /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9D5227A22EEA003344BC /* ProfileSummary.swift */; };
 		02FA9D5527A2375C003344BC /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9D5427A2375C003344BC /* ProfileEditor.swift */; };
+		02FA9D5727A8730F003344BC /* CreditCardFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9D5627A8730F003344BC /* CreditCardFilter.swift */; };
+		02FA9D5927A87CC1003344BC /* CreditCardFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9D5827A87CC1003344BC /* CreditCardFilterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +166,8 @@
 		02FA9D5027A22B91003344BC /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		02FA9D5227A22EEA003344BC /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		02FA9D5427A2375C003344BC /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		02FA9D5627A8730F003344BC /* CreditCardFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardFilter.swift; sourceTree = "<group>"; };
+		02FA9D5827A87CC1003344BC /* CreditCardFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardFilterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				02782E2A27745FF7002076BD /* RepositoriesListViewModelTests.swift */,
+				02FA9D5827A87CC1003344BC /* CreditCardFilterTests.swift */,
 			);
 			path = VacasaPracticeTests;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 				02782E7B27758068002076BD /* Configurable.swift */,
 				02C820EB2797E2CB00F368B9 /* BundleExtensions.swift.swift */,
 				02C820F32798F8DA00F368B9 /* ScreenPreview.swift */,
+				02FA9D5627A8730F003344BC /* CreditCardFilter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -660,6 +666,7 @@
 				02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */,
 				02782E7827757104002076BD /* UserInfo.swift in Sources */,
 				02E809C1279FD99F00945E91 /* CategoryHome.swift in Sources */,
+				02FA9D5727A8730F003344BC /* CreditCardFilter.swift in Sources */,
 				02E809DB279FDB5C00945E91 /* LandmarkContentView.swift in Sources */,
 				02FA9D5127A22B91003344BC /* ProfileHost.swift in Sources */,
 				02E809DD279FDBE200945E91 /* ListViewModel.swift in Sources */,
@@ -680,6 +687,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02FA9D5927A87CC1003344BC /* CreditCardFilterTests.swift in Sources */,
 				02782E2B27745FF7002076BD /* RepositoriesListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
