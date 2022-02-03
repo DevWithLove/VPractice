@@ -44,6 +44,7 @@
 		028E153A279A327E0008949E /* VacasaPractices.docc in Sources */ = {isa = PBXBuildFile; fileRef = 028E1539279A327E0008949E /* VacasaPractices.docc */; };
 		02ACC40A27AB39DB008991C0 /* BottomSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC40927AB39DB008991C0 /* BottomSheetContentView.swift */; };
 		02ACC40C27AB8614008991C0 /* BottomSheetRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC40B27AB8614008991C0 /* BottomSheetRootView.swift */; };
+		02ACC41127ABB756008991C0 /* BottomSheetView.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC41027ABB756008991C0 /* BottomSheetView.swift.swift */; };
 		02C820E32795011100F368B9 /* RepositoryListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E22795011100F368B9 /* RepositoryListRow.swift */; };
 		02C820E52795028300F368B9 /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E42795028300F368B9 /* RepositoryListView.swift */; };
 		02C820E7279504CA00F368B9 /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E6279504CA00F368B9 /* RepositoryListViewModel.swift */; };
@@ -139,6 +140,7 @@
 		028E1539279A327E0008949E /* VacasaPractices.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VacasaPractices.docc; sourceTree = "<group>"; };
 		02ACC40927AB39DB008991C0 /* BottomSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContentView.swift; sourceTree = "<group>"; };
 		02ACC40B27AB8614008991C0 /* BottomSheetRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetRootView.swift; sourceTree = "<group>"; };
+		02ACC41027ABB756008991C0 /* BottomSheetView.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift.swift; sourceTree = "<group>"; };
 		02C820E22795011100F368B9 /* RepositoryListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListRow.swift; sourceTree = "<group>"; };
 		02C820E42795028300F368B9 /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
 		02C820E6279504CA00F368B9 /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 				02FA9D5B27AB2D5D003344BC /* BottomSheet.swift */,
 				02ACC40927AB39DB008991C0 /* BottomSheetContentView.swift */,
 				02ACC40B27AB8614008991C0 /* BottomSheetRootView.swift */,
+				02ACC41027ABB756008991C0 /* BottomSheetView.swift.swift */,
 			);
 			name = BottomSheet;
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 				02782E6427751822002076BD /* TableViewCellExtensions.swift in Sources */,
 				02782E5927746AB4002076BD /* ApiError.swift.swift in Sources */,
 				027A1858279CB74000CCCF39 /* ExpandableButtonRootView.swift in Sources */,
+				02ACC41127ABB756008991C0 /* BottomSheetView.swift.swift in Sources */,
 				02E809DA279FDB5C00945E91 /* MapView.swift in Sources */,
 				02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */,
 				02782E7827757104002076BD /* UserInfo.swift in Sources */,
