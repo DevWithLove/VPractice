@@ -17,29 +17,9 @@ struct BottomSheet: View {
     @Binding var show: Bool
     
     var body: some View {
-        ZStack {
-            content
-            Button {
-                withAnimation {
-                    show.toggle()
-                }
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.body.bold())
-                    .foregroundColor(.white)
-                    .padding(9)
-                    .background(Color(uiColor: .systemRed))
-                    .mask(Circle())
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-            .padding(10)
-        }
-    }
-    
-    var content: some View {
         GeometryReader { proxy in
             VStack {
-                BottomSheetContentView()
+                BottomSheetContentView(show: $show)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.white)
