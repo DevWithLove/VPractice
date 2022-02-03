@@ -12,6 +12,7 @@ enum SampleUIItems: String, CaseIterable {
     case hikeView = "Hike view"
     case landmark = "Landmarks"
     case landmarkCategory = "Landmarks categories"
+    case bottomSheet = "Bottom sheet"
     
     @ViewBuilder
     func getDestiationView() -> some View {
@@ -24,6 +25,8 @@ enum SampleUIItems: String, CaseIterable {
             LandmarkContentView()
         case .landmarkCategory:
             CategoryHome().environmentObject(LandmarkModelData())
+        case .bottomSheet:
+            BottomSheetRootView()
         }
     }
 }
