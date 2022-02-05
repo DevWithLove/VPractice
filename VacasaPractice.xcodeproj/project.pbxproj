@@ -45,6 +45,10 @@
 		02ACC40A27AB39DB008991C0 /* BottomSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC40927AB39DB008991C0 /* BottomSheetContentView.swift */; };
 		02ACC40C27AB8614008991C0 /* BottomSheetRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC40B27AB8614008991C0 /* BottomSheetRootView.swift */; };
 		02ACC41127ABB756008991C0 /* BottomSheetView.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC41027ABB756008991C0 /* BottomSheetView.swift.swift */; };
+		02ACC41427AE247E008991C0 /* Level2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC41327AE247E008991C0 /* Level2.swift */; };
+		02ACC41627AE24BC008991C0 /* NavRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC41527AE24BC008991C0 /* NavRootView.swift */; };
+		02ACC41827AE2563008991C0 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC41727AE2563008991C0 /* DestinationView.swift */; };
+		02ACC41A27AE2C31008991C0 /* Level3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC41927AE2C31008991C0 /* Level3.swift */; };
 		02C820E32795011100F368B9 /* RepositoryListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E22795011100F368B9 /* RepositoryListRow.swift */; };
 		02C820E52795028300F368B9 /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E42795028300F368B9 /* RepositoryListView.swift */; };
 		02C820E7279504CA00F368B9 /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C820E6279504CA00F368B9 /* RepositoryListViewModel.swift */; };
@@ -141,6 +145,10 @@
 		02ACC40927AB39DB008991C0 /* BottomSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContentView.swift; sourceTree = "<group>"; };
 		02ACC40B27AB8614008991C0 /* BottomSheetRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetRootView.swift; sourceTree = "<group>"; };
 		02ACC41027ABB756008991C0 /* BottomSheetView.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift.swift; sourceTree = "<group>"; };
+		02ACC41327AE247E008991C0 /* Level2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level2.swift; sourceTree = "<group>"; };
+		02ACC41527AE24BC008991C0 /* NavRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavRootView.swift; sourceTree = "<group>"; };
+		02ACC41727AE2563008991C0 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
+		02ACC41927AE2C31008991C0 /* Level3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level3.swift; sourceTree = "<group>"; };
 		02C820E22795011100F368B9 /* RepositoryListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListRow.swift; sourceTree = "<group>"; };
 		02C820E42795028300F368B9 /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
 		02C820E6279504CA00F368B9 /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
@@ -359,6 +367,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				02ACC41227AE2354008991C0 /* Navigation */,
 				02FA9D5A27AB2CBE003344BC /* BottomSheet */,
 				02E809C7279FDAD700945E91 /* Landmark */,
 				02E809BF279FD97C00945E91 /* CategoryView */,
@@ -384,6 +393,17 @@
 				027A1857279CB74000CCCF39 /* ExpandableButtonRootView.swift */,
 			);
 			path = ExpandableButtonPanel;
+			sourceTree = "<group>";
+		};
+		02ACC41227AE2354008991C0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				02ACC41327AE247E008991C0 /* Level2.swift */,
+				02ACC41927AE2C31008991C0 /* Level3.swift */,
+				02ACC41527AE24BC008991C0 /* NavRootView.swift */,
+				02ACC41727AE2563008991C0 /* DestinationView.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		02C820E1279500F200F368B9 /* RepositoriesListSwiftUI */ = {
@@ -649,6 +669,7 @@
 				02C820F42798F8DB00F368B9 /* ScreenPreview.swift in Sources */,
 				02C820F22797E58800F368B9 /* MockData.swift in Sources */,
 				02E809E227A1209600945E91 /* CategoryRow.swift in Sources */,
+				02ACC41827AE2563008991C0 /* DestinationView.swift in Sources */,
 				02782E7A2775729E002076BD /* SettingTableViewCell.swift in Sources */,
 				02782E5727746A73002076BD /* HttpMethod.swift in Sources */,
 				02E809B1279E637E00945E91 /* Hike.swift in Sources */,
@@ -659,6 +680,7 @@
 				02782E51277464EB002076BD /* ListError.swift in Sources */,
 				02782E1427745FF5002076BD /* AppDelegate.swift in Sources */,
 				02E809BE279E65DD00945E91 /* HikeView.swift in Sources */,
+				02ACC41A27AE2C31008991C0 /* Level3.swift in Sources */,
 				02E809E427A1230100945E91 /* CategoryItem.swift in Sources */,
 				02782E6627751915002076BD /* UIViewControllerExtension.swift.swift in Sources */,
 				02782E5B27747428002076BD /* RepositorySearchResultDto.swift in Sources */,
@@ -691,11 +713,13 @@
 				02E809DB279FDB5C00945E91 /* LandmarkContentView.swift in Sources */,
 				02FA9D5127A22B91003344BC /* ProfileHost.swift in Sources */,
 				02ACC40A27AB39DB008991C0 /* BottomSheetContentView.swift in Sources */,
+				02ACC41627AE24BC008991C0 /* NavRootView.swift in Sources */,
 				02ACC40C27AB8614008991C0 /* BottomSheetRootView.swift in Sources */,
 				02E809DD279FDBE200945E91 /* ListViewModel.swift in Sources */,
 				02E809C4279FDA1300945E91 /* Landmark.swift in Sources */,
 				02782E7C27758068002076BD /* Configurable.swift in Sources */,
 				02E809BD279E65DD00945E91 /* HikeGraph.swift in Sources */,
+				02ACC41427AE247E008991C0 /* Level2.swift in Sources */,
 				02C820EC2797E2CB00F368B9 /* BundleExtensions.swift.swift in Sources */,
 				02E809D6279FDB5C00945E91 /* LandmarkRow.swift in Sources */,
 				02C820E32795011100F368B9 /* RepositoryListRow.swift in Sources */,
