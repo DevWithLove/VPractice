@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0240B0CF27AF16670060DAA4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240B0CE27AF16670060DAA4 /* Card.swift */; };
+		0240B0D227AF22D20060DAA4 /* CardRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240B0D127AF22D20060DAA4 /* CardRootView.swift */; };
 		02782E1427745FF5002076BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1327745FF5002076BD /* AppDelegate.swift */; };
 		02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1527745FF5002076BD /* SceneDelegate.swift */; };
 		02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1727745FF5002076BD /* RepositoriesViewController.swift */; };
@@ -104,6 +106,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0240B0CE27AF16670060DAA4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0240B0D127AF22D20060DAA4 /* CardRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRootView.swift; sourceTree = "<group>"; };
 		02782E1027745FF4002076BD /* VacasaPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacasaPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02782E1327745FF5002076BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02782E1527745FF5002076BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +216,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0240B0CD27AF16200060DAA4 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				0240B0CE27AF16670060DAA4 /* Card.swift */,
+				0240B0D127AF22D20060DAA4 /* CardRootView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		02782E0727745FF4002076BD = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +380,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0240B0CD27AF16200060DAA4 /* CardView */,
 				02ACC41227AE2354008991C0 /* Navigation */,
 				02FA9D5A27AB2CBE003344BC /* BottomSheet */,
 				02E809C7279FDAD700945E91 /* Landmark */,
@@ -673,6 +687,7 @@
 				02782E7A2775729E002076BD /* SettingTableViewCell.swift in Sources */,
 				02782E5727746A73002076BD /* HttpMethod.swift in Sources */,
 				02E809B1279E637E00945E91 /* Hike.swift in Sources */,
+				0240B0CF27AF16670060DAA4 /* Card.swift in Sources */,
 				02E809BC279E65DD00945E91 /* HikeDetail.swift in Sources */,
 				02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */,
 				02C820E927950FAC00F368B9 /* RepositoryListHostingViewController.swift in Sources */,
@@ -711,6 +726,7 @@
 				02E809C1279FD99F00945E91 /* CategoryHome.swift in Sources */,
 				02FA9D5727A8730F003344BC /* CreditCardFilter.swift in Sources */,
 				02E809DB279FDB5C00945E91 /* LandmarkContentView.swift in Sources */,
+				0240B0D227AF22D20060DAA4 /* CardRootView.swift in Sources */,
 				02FA9D5127A22B91003344BC /* ProfileHost.swift in Sources */,
 				02ACC40A27AB39DB008991C0 /* BottomSheetContentView.swift in Sources */,
 				02ACC41627AE24BC008991C0 /* NavRootView.swift in Sources */,

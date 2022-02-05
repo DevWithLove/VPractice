@@ -44,6 +44,6 @@ struct Level2_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             Level2()
-        }.previewAsScreen()
+        }
     }
 }
