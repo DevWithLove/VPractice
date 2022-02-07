@@ -10,6 +10,9 @@
 		0240B0CF27AF16670060DAA4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240B0CE27AF16670060DAA4 /* Card.swift */; };
 		0240B0D227AF22D20060DAA4 /* CardRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240B0D127AF22D20060DAA4 /* CardRootView.swift */; };
 		0240B0D527AF91B40060DAA4 /* AppStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240B0D427AF91B40060DAA4 /* AppStateView.swift */; };
+		0240B0D927B0D0B60060DAA4 /* FastingTimerRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240B0D827B0D0B60060DAA4 /* FastingTimerRootView.swift */; };
+		0240B0DB27B0D2100060DAA4 /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240B0DA27B0D2100060DAA4 /* ProgressRing.swift */; };
+		0240B0DD27B0DBD30060DAA4 /* FastingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0240B0DC27B0DBD20060DAA4 /* FastingManager.swift */; };
 		02782E1427745FF5002076BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1327745FF5002076BD /* AppDelegate.swift */; };
 		02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1527745FF5002076BD /* SceneDelegate.swift */; };
 		02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1727745FF5002076BD /* RepositoriesViewController.swift */; };
@@ -110,6 +113,9 @@
 		0240B0CE27AF16670060DAA4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		0240B0D127AF22D20060DAA4 /* CardRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRootView.swift; sourceTree = "<group>"; };
 		0240B0D427AF91B40060DAA4 /* AppStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateView.swift; sourceTree = "<group>"; };
+		0240B0D827B0D0B60060DAA4 /* FastingTimerRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingTimerRootView.swift; sourceTree = "<group>"; };
+		0240B0DA27B0D2100060DAA4 /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
+		0240B0DC27B0DBD20060DAA4 /* FastingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingManager.swift; sourceTree = "<group>"; };
 		02782E1027745FF4002076BD /* VacasaPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacasaPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02782E1327745FF5002076BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02782E1527745FF5002076BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +239,16 @@
 				0240B0D427AF91B40060DAA4 /* AppStateView.swift */,
 			);
 			path = AppStates;
+			sourceTree = "<group>";
+		};
+		0240B0D627B0D0840060DAA4 /* FastingTimer */ = {
+			isa = PBXGroup;
+			children = (
+				0240B0D827B0D0B60060DAA4 /* FastingTimerRootView.swift */,
+				0240B0DA27B0D2100060DAA4 /* ProgressRing.swift */,
+				0240B0DC27B0DBD20060DAA4 /* FastingManager.swift */,
+			);
+			path = FastingTimer;
 			sourceTree = "<group>";
 		};
 		02782E0727745FF4002076BD = {
@@ -390,6 +406,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0240B0D627B0D0840060DAA4 /* FastingTimer */,
 				0240B0D327AF91900060DAA4 /* AppStates */,
 				0240B0CD27AF16200060DAA4 /* CardView */,
 				02ACC41227AE2354008991C0 /* Navigation */,
@@ -688,10 +705,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				028E153A279A327E0008949E /* VacasaPractices.docc in Sources */,
+				0240B0D927B0D0B60060DAA4 /* FastingTimerRootView.swift in Sources */,
 				027A184E279CAB4400CCCF39 /* ExpandableButtonPanel.swift in Sources */,
 				02E809D4279FDB5C00945E91 /* CircleImage.swift.swift in Sources */,
 				02E809D5279FDB5C00945E91 /* FavoriteButton.swift in Sources */,
 				02C820F42798F8DB00F368B9 /* ScreenPreview.swift in Sources */,
+				0240B0DD27B0DBD30060DAA4 /* FastingManager.swift in Sources */,
 				02C820F22797E58800F368B9 /* MockData.swift in Sources */,
 				02E809E227A1209600945E91 /* CategoryRow.swift in Sources */,
 				02ACC41827AE2563008991C0 /* DestinationView.swift in Sources */,
@@ -750,6 +769,7 @@
 				02ACC41427AE247E008991C0 /* Level2.swift in Sources */,
 				02C820EC2797E2CB00F368B9 /* BundleExtensions.swift.swift in Sources */,
 				02E809D6279FDB5C00945E91 /* LandmarkRow.swift in Sources */,
+				0240B0DB27B0D2100060DAA4 /* ProgressRing.swift in Sources */,
 				02C820E32795011100F368B9 /* RepositoryListRow.swift in Sources */,
 				02E809E0279FDF4800945E91 /* LandmarkModelData.swift in Sources */,
 				02FA9D5C27AB2D5D003344BC /* BottomSheet.swift in Sources */,

@@ -16,6 +16,7 @@ enum SampleUIItems: String, CaseIterable {
     case navigation = "Navigation"
     case cardView = "Card view"
     case appState = "App State"
+    case fastingTimer = "Fasting Timer"
     
     @ViewBuilder
     func getDestiationView() -> some View {
@@ -36,6 +37,10 @@ enum SampleUIItems: String, CaseIterable {
             CardRootView()
         case .appState:
             AppStateView()
+        case .fastingTimer:
+            FastingTimerRootView()
+                .navigationBarTitle(Text("Fasting timer"), displayMode: .inline)
+                //.navigationBarHidden(true)
         }
     }
 }
