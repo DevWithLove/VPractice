@@ -24,3 +24,9 @@ extension Landmark {
         Bundle.main.decode([Landmark].self, from: "landmarkData.json")
     }
 }
+
+extension WeatherResponseBody {
+    static var mock: WeatherResponseBody {
+        Bundle.main.decode(WeatherResponseBody.self, from: "weatherData.json")
+    }
+}
