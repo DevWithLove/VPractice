@@ -18,6 +18,7 @@ enum SampleUIItems: String, CaseIterable {
     case appState = "App State"
     case fastingTimer = "Fasting Timer"
     case weatherDemo = "Weather Demo"
+    case scrollingEffect = "Scrolling Effect"
     
     @ViewBuilder
     func getDestiationView() -> some View {
@@ -45,6 +46,9 @@ enum SampleUIItems: String, CaseIterable {
         case .weatherDemo:
             WeatherDemoContentView()
                 .navigationBarTitle(Text("Weather demo"), displayMode: .inline)
+        case .scrollingEffect:
+            ScrollingEffectRootView()
+                .navigationBarTitle(Text("Scrolling Effect"), displayMode: .inline)
         }
     }
 }

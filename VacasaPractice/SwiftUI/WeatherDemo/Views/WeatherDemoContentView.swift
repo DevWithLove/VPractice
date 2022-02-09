@@ -16,7 +16,9 @@ struct WeatherDemoContentView: View {
             
             if let location = locationManager.location {
                 if let weather = weather {
-                    WeatherView(weather: weather)
+                    ScrollView {
+                        WeatherView(weather: weather)
+                    }
                 } else {
                     LoadingView()
                         .task {
