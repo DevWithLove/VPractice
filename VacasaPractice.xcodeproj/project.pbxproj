@@ -48,6 +48,7 @@
 		027A1853279CB35300CCCF39 /* SampleUIHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A1852279CB35300CCCF39 /* SampleUIHostingViewController.swift */; };
 		027A1858279CB74000CCCF39 /* ExpandableButtonRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A1857279CB74000CCCF39 /* ExpandableButtonRootView.swift */; };
 		028E153A279A327E0008949E /* VacasaPractices.docc in Sources */ = {isa = PBXBuildFile; fileRef = 028E1539279A327E0008949E /* VacasaPractices.docc */; };
+		02A8190127BCD7EE0009C670 /* FLEX in Frameworks */ = {isa = PBXBuildFile; productRef = 02A8190027BCD7EE0009C670 /* FLEX */; };
 		02ACC40A27AB39DB008991C0 /* BottomSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC40927AB39DB008991C0 /* BottomSheetContentView.swift */; };
 		02ACC40C27AB8614008991C0 /* BottomSheetRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC40B27AB8614008991C0 /* BottomSheetRootView.swift */; };
 		02ACC41127ABB756008991C0 /* BottomSheetView.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACC41027ABB756008991C0 /* BottomSheetView.swift.swift */; };
@@ -232,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02782E602775155B002076BD /* SnapKit in Frameworks */,
+				02A8190127BCD7EE0009C670 /* FLEX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +674,7 @@
 			name = VacasaPractice;
 			packageProductDependencies = (
 				02782E5F2775155B002076BD /* SnapKit */,
+				02A8190027BCD7EE0009C670 /* FLEX */,
 			);
 			productName = VacasaPractice;
 			productReference = 02782E1027745FF4002076BD /* VacasaPractice.app */;
@@ -747,6 +750,7 @@
 			mainGroup = 02782E0727745FF4002076BD;
 			packageReferences = (
 				02782E5E2775155B002076BD /* XCRemoteSwiftPackageReference "SnapKit" */,
+				02A818FF27BCD7EE0009C670 /* XCRemoteSwiftPackageReference "FLEX" */,
 			);
 			productRefGroup = 02782E1127745FF4002076BD /* Products */;
 			projectDirPath = "";
@@ -1240,6 +1244,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		02A818FF27BCD7EE0009C670 /* XCRemoteSwiftPackageReference "FLEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FLEXTool/FLEX.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1247,6 +1259,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 02782E5E2775155B002076BD /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		02A8190027BCD7EE0009C670 /* FLEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02A818FF27BCD7EE0009C670 /* XCRemoteSwiftPackageReference "FLEX" */;
+			productName = FLEX;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

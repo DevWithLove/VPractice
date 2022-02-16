@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RepositoryListView: View {
-    @StateObject var viewModel = RepositoryListViewModel(repositoryService: MockRepositoryWebService())
+    @StateObject var viewModel = RepositoryListViewModel(repositoryService: RepositoryWebService())
     var body: some View {
         NavigationView {
             List(viewModel.repositories, id: \.name) { repository in

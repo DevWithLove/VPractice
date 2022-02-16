@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "FLEX",
+        "repositoryURL": "https://github.com/FLEXTool/FLEX.git",
+        "state": {
+          "branch": "master",
+          "revision": "2983649cdb00b418ba054f6bd41615813e03c0e9",
+          "version": null
+        }
+      },
+      {
         "package": "SnapKit",
         "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
         "state": {
