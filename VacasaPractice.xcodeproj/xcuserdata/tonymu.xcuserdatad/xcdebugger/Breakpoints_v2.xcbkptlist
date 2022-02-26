@@ -152,7 +152,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3B4602A8-4912-4A60-88D8-1F474FD1E9D0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VacasaPractice/Core/Networking/RepositoryService.swift"
@@ -168,7 +168,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "059FC08A-0C65-4181-96A8-B9596B32D1A0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VacasaPractice/Core/Networking/RepositoryService.swift"
@@ -180,34 +180,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "059FC08A-0C65-4181-96A8-B9596B32D1A0 - 2ed61bfcc17d6686"
+                  uuid = "059FC08A-0C65-4181-96A8-B9596B32D1A0 - 5c21d37dd3d12e00"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "VacasaPractice.RepositoryWebService.fetch() async throws -&gt; VacasaPractice.RepositorySearchResultDto"
                   moduleName = "VacasaPractice"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tonymu/Dev/VPractice/VacasaPractice/Core/Networking/RepositoryService.swift"
+                  urlString = "file:///Users/tonymu/Dev/VacasaPractice/VacasaPractice/Core/Networking/RepositoryService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
                   endingLineNumber = "38"
-                  offsetFromSymbolStart = "532">
+                  offsetFromSymbolStart = "689">
                </Location>
                <Location
-                  uuid = "059FC08A-0C65-4181-96A8-B9596B32D1A0 - 5f4ea20d1f5f34fc"
+                  uuid = "059FC08A-0C65-4181-96A8-B9596B32D1A0 - 2db96a8c0df37c7a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(1) await resume partial function for VacasaPractice.RepositoryWebService.fetch() async throws -&gt; VacasaPractice.RepositorySearchResultDto"
                   moduleName = "VacasaPractice"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tonymu/Dev/VPractice/VacasaPractice/Core/Networking/RepositoryService.swift"
+                  urlString = "file:///Users/tonymu/Dev/VacasaPractice/VacasaPractice/Core/Networking/RepositoryService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
                   endingLineNumber = "38"
-                  offsetFromSymbolStart = "68">
+                  offsetFromSymbolStart = "115">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -232,7 +232,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "38E8F134-4150-4BDF-833A-399FBCA7350D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VacasaPractice/Core/Networking/RepositoryService.swift"
@@ -264,7 +264,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "240452EB-ED29-47AD-9201-69631A6D9F69"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VacasaPractice/Core/Networking/RepositoryService.swift"
