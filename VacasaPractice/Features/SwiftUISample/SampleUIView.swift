@@ -20,6 +20,8 @@ enum SampleUIItems: String, CaseIterable {
     case weatherDemo = "Weather Demo"
     case scrollingEffect = "Scrolling Effect"
     case walletHomeView = "Wallet Animation"
+    case minimalAnimationHomeView = "Minimal Animation"
+    case calendar = "Calendar"
     
     @ViewBuilder
     func getDestiationView() -> some View {
@@ -53,6 +55,13 @@ enum SampleUIItems: String, CaseIterable {
         case .walletHomeView:
             WalletHomeView()
                 .navigationBarTitle(Text("Wallet Animation"), displayMode: .inline)
+        case .minimalAnimationHomeView:
+            MinimalAnimationHomeView()
+                .navigationBarTitle(Text("Minimalet Animation"), displayMode: .inline)
+        case .calendar:
+            CustomDatePickerHomeView()
+                .navigationBarTitle(Text("Calendar"), displayMode: .inline)
+
         }
     }
 }
