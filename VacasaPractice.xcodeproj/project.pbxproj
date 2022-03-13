@@ -16,6 +16,7 @@
 		0245A52727DC2BB5006305F3 /* CustomDatePicker2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245A52627DC2BB5006305F3 /* CustomDatePicker2.swift */; };
 		0245A52927DD37DA006305F3 /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245A52827DD37DA006305F3 /* UserCardView.swift */; };
 		0245A52C27DE97A4006305F3 /* DropDragHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245A52B27DE97A4006305F3 /* DropDragHomeView.swift */; };
+		0245A53327DEABC2006305F3 /* EditModeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245A53227DEABC2006305F3 /* EditModeHomeView.swift */; };
 		025A3A6F27C9CE2E00E6B9A1 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A3A6E27C9CE2E00E6B9A1 /* CreditCard.swift */; };
 		025A3A7127C9CF8500E6B9A1 /* WalletHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A3A7027C9CF8500E6B9A1 /* WalletHomeView.swift */; };
 		025A3A7327CAC6AF00E6B9A1 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A3A7227CAC6AF00E6B9A1 /* Expense.swift */; };
@@ -147,6 +148,7 @@
 		0245A52627DC2BB5006305F3 /* CustomDatePicker2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker2.swift; sourceTree = "<group>"; };
 		0245A52827DD37DA006305F3 /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
 		0245A52B27DE97A4006305F3 /* DropDragHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDragHomeView.swift; sourceTree = "<group>"; };
+		0245A53227DEABC2006305F3 /* EditModeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditModeHomeView.swift; sourceTree = "<group>"; };
 		025A3A6E27C9CE2E00E6B9A1 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		025A3A7027C9CF8500E6B9A1 /* WalletHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHomeView.swift; sourceTree = "<group>"; };
 		025A3A7227CAC6AF00E6B9A1 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
@@ -313,6 +315,14 @@
 				0245A52B27DE97A4006305F3 /* DropDragHomeView.swift */,
 			);
 			path = DragDropViews;
+			sourceTree = "<group>";
+		};
+		0245A53127DEABAB006305F3 /* EditMode */ = {
+			isa = PBXGroup;
+			children = (
+				0245A53227DEABC2006305F3 /* EditModeHomeView.swift */,
+			);
+			path = EditMode;
 			sourceTree = "<group>";
 		};
 		025A3A6B27C9CC1200E6B9A1 /* WalletAppUI */ = {
@@ -497,6 +507,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0245A53127DEABAB006305F3 /* EditMode */,
 				0245A52A27DE973A006305F3 /* DragDropViews */,
 				02D0515827D1CDE1007EA76F /* CustomDatePicker */,
 				02C09C9C27CF4E6200583932 /* MinimalAnimations */,
@@ -937,6 +948,7 @@
 				02E809B1279E637E00945E91 /* Hike.swift in Sources */,
 				0240B0CF27AF16670060DAA4 /* Card.swift in Sources */,
 				0245A52727DC2BB5006305F3 /* CustomDatePicker2.swift in Sources */,
+				0245A53327DEABC2006305F3 /* EditModeHomeView.swift in Sources */,
 				02E809BC279E65DD00945E91 /* HikeDetail.swift in Sources */,
 				02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */,
 				02F536D127B200E900D06B93 /* WeatherManager.swift in Sources */,

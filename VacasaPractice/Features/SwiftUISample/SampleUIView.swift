@@ -8,6 +8,7 @@
 import SwiftUI
 
 enum SampleUIItems: String, CaseIterable {
+    case editMode = "Edit Mode"
     case expandableButton = "Expandable Button"
     case hikeView = "Hike view"
     case landmark = "Landmarks"
@@ -27,6 +28,9 @@ enum SampleUIItems: String, CaseIterable {
     @ViewBuilder
     func getDestiationView() -> some View {
         switch(self) {
+        case .editMode:
+            EditModeHomeView()
+                .navigationBarTitle(Text("Edit Mode"), displayMode: .inline)
         case .expandableButton:
             ExpandableButtonRootView()
         case .hikeView:
