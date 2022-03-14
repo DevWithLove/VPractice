@@ -10,16 +10,16 @@ import SwiftUI
 struct EditModeHomeView: View {
     @State var items = ["1","2","3","4"]
 
-    @State var isEditing = false
-    @State var selectedRows: [String]?
-
+    @State var isEditing = true
+    @State var selectedRows = Set<String>()
     var body: some View {
         List(selection: $selectedRows) {
             ForEach(items, id: \.self) { item in
-                Text(item)
+                EditableRow(title: item)
             }
             .onDelete(perform: delete)
             .onMove(perform: move)
+            .listRowBackground(Color.clear)
         }
         .navigationBarItems(leading: Button(action: {
             add()
@@ -37,6 +37,9 @@ struct EditModeHomeView: View {
         .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive))
         // add animation
         .animation(Animation.spring(), value: isEditing)
+        .onAppear {
+           selectedRows = ["3","4"]
+        }
     }
 
     func delete(at offsets: IndexSet) {
@@ -60,3 +63,56 @@ struct EditModeHomeView_Previews: PreviewProvider {
         EditModeHomeView()
     }
 }
+
+struct EditableRow: View {
+    let title: String
+    var body: some View {
+        HStack (spacing: 10) {
+            Image(systemName: "plus.circle.fill")
+                .frame(width: 20, height: 20)
+            Text(title)
+            Spacer()
+        }
+    }
+}
+
+/*
+
+ struct ContentView: View {
+     struct Ocean: Identifiable, Hashable {
+         let name: String
+         let id = UUID()
+     }
+     private var oceans = [
+         Ocean(name: "Pacific"),
+         Ocean(name: "Atlantic"),
+         Ocean(name: "Indian"),
+         Ocean(name: "Southern"),
+         Ocean(name: "Arctic")
+     ]
+     @State private var multiSelection = Set<UUID>()
+
+     var body: some View {
+         NavigationView {
+             List(oceans, selection: $multiSelection) {
+                 Text($0.name)
+             }
+             .navigationTitle("Oceans")
+             .environment(\.editMode, .constant(.active))
+             .onTapGesture {
+                 // This is a walk-around: try how it works without `asyncAfter()`
+                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.05, execute: {
+                     print(multiSelection)
+                 })
+             }
+         }
+         Text("\(multiSelection.count) selections")
+     }
+ }
+
+ struct ContentView_Previews: PreviewProvider {
+     static var previews: some View {
+         ContentView()
+     }
+ }
+ */
