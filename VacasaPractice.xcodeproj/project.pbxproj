@@ -20,6 +20,8 @@
 		025A3A6F27C9CE2E00E6B9A1 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A3A6E27C9CE2E00E6B9A1 /* CreditCard.swift */; };
 		025A3A7127C9CF8500E6B9A1 /* WalletHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A3A7027C9CF8500E6B9A1 /* WalletHomeView.swift */; };
 		025A3A7327CAC6AF00E6B9A1 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A3A7227CAC6AF00E6B9A1 /* Expense.swift */; };
+		02700A1F27E46E2300566229 /* EnumFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02700A1E27E46E2300566229 /* EnumFileBuilder.swift */; };
+		02700A2227E4713400566229 /* EnumBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02700A2127E4713400566229 /* EnumBuilderView.swift */; };
 		02782E1427745FF5002076BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1327745FF5002076BD /* AppDelegate.swift */; };
 		02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1527745FF5002076BD /* SceneDelegate.swift */; };
 		02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02782E1727745FF5002076BD /* RepositoriesViewController.swift */; };
@@ -152,6 +154,8 @@
 		025A3A6E27C9CE2E00E6B9A1 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		025A3A7027C9CF8500E6B9A1 /* WalletHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHomeView.swift; sourceTree = "<group>"; };
 		025A3A7227CAC6AF00E6B9A1 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		02700A1E27E46E2300566229 /* EnumFileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumFileBuilder.swift; sourceTree = "<group>"; };
+		02700A2127E4713400566229 /* EnumBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBuilderView.swift; sourceTree = "<group>"; };
 		02782E1027745FF4002076BD /* VacasaPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacasaPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02782E1327745FF5002076BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02782E1527745FF5002076BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -351,6 +355,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		02700A1D27E46E0C00566229 /* FileBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				02700A1E27E46E2300566229 /* EnumFileBuilder.swift */,
+			);
+			path = FileBuilder;
+			sourceTree = "<group>";
+		};
+		02700A2027E4711300566229 /* EnumBuilderView */ = {
+			isa = PBXGroup;
+			children = (
+				02700A2127E4713400566229 /* EnumBuilderView.swift */,
+			);
+			path = EnumBuilderView;
+			sourceTree = "<group>";
+		};
 		02782E0727745FF4002076BD = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +463,7 @@
 		02782E4627746343002076BD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				02700A1D27E46E0C00566229 /* FileBuilder */,
 				02782E6327751822002076BD /* TableViewCellExtensions.swift */,
 				02782E6527751915002076BD /* UIViewControllerExtension.swift.swift */,
 				02782E7B27758068002076BD /* Configurable.swift */,
@@ -507,6 +528,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				02700A2027E4711300566229 /* EnumBuilderView */,
 				0245A53127DEABAB006305F3 /* EditMode */,
 				0245A52A27DE973A006305F3 /* DragDropViews */,
 				02D0515827D1CDE1007EA76F /* CustomDatePicker */,
@@ -981,6 +1003,7 @@
 				02D9461E27B3A177008EDD5F /* Forecast.swift in Sources */,
 				02FA9D5527A2375C003344BC /* ProfileEditor.swift in Sources */,
 				02782E7427756285002076BD /* SettingRepository.swift in Sources */,
+				02700A1F27E46E2300566229 /* EnumFileBuilder.swift in Sources */,
 				02C820E52795028300F368B9 /* RepositoryListView.swift in Sources */,
 				027A1851279CB16E00CCCF39 /* SampleUIView.swift in Sources */,
 				027A1853279CB35300CCCF39 /* SampleUIHostingViewController.swift in Sources */,
@@ -1016,6 +1039,7 @@
 				02E809C4279FDA1300945E91 /* Landmark.swift in Sources */,
 				02F536D727B20F5600D06B93 /* Extensions.swift in Sources */,
 				02782E7C27758068002076BD /* Configurable.swift in Sources */,
+				02700A2227E4713400566229 /* EnumBuilderView.swift in Sources */,
 				02E809BD279E65DD00945E91 /* HikeGraph.swift in Sources */,
 				02ACC41427AE247E008991C0 /* Level2.swift in Sources */,
 				02C820EC2797E2CB00F368B9 /* BundleExtensions.swift.swift in Sources */,
