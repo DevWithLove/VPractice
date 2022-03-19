@@ -123,8 +123,8 @@ extension String.StringInterpolation {
 
     // Convert dict to 'key1: value1, key2: value2,...' format
     mutating func appendInterpolation(typeParams: [String:String]) {
-        let result = (typeParams.sorted(by: {$0.0 < $1.0})
-                                .compactMap({(key, value) -> String in return "\(key): \(value)"}) as Array)
+        let result =  typeParams.sorted(by: {$0.0 < $1.0})
+                                .compactMap({(key, value) -> String in return "\(key): \(value)"})
                                 .joined(separator: ", ")
         appendLiteral(result)
     }

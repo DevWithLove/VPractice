@@ -12,7 +12,8 @@ struct EnumBuilderView: View {
     let value = "%@ - %@ %@"
     let enumBuilder = StringEnumBuilder(template: StringEnumBuilder.defaultTemlate, moduleName: "VCBooking", accessLevel: .public)
     var body: some View {
-        let result = enumBuilder.addTab(2)
+        let result = enumBuilder.addNewLine()
+                                .addTab(2)
                                 .addComment("Hode a Booking")
                                 .addNewLine()
                                 .addTab(2)
