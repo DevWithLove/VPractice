@@ -26,6 +26,7 @@ enum SampleUIItems: String, CaseIterable {
     case dragDropView = "Drag drop view"
     case ScrollToTop = "ScrollToTop"
     case appStoreHeroAnimation = "App Store Animation"
+    case randomCounterView = "Random Counter"
     
     @ViewBuilder
     func getDestiationView() -> some View {
@@ -76,6 +77,8 @@ enum SampleUIItems: String, CaseIterable {
                 .navigationBarTitle(Text(self.rawValue), displayMode: .inline)
         case .appStoreHeroAnimation:
             AppStoreHeroHome().navigationBarTitle(Text(self.rawValue), displayMode: .inline)
+        case .randomCounterView:
+            RandomNumberView()
         }
     }
 }

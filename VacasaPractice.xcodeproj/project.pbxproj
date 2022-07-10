@@ -85,6 +85,7 @@
 		02D0515E27D21009007EA76F /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0515D27D21009007EA76F /* CustomDatePicker.swift */; };
 		02D0516027D21476007EA76F /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0515F27D21476007EA76F /* DateValue.swift */; };
 		02D0516227D299CC007EA76F /* CalendarTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0516127D299CC007EA76F /* CalendarTask.swift */; };
+		02D8D4B3286A6A7F000EB039 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D4B2286A6A7E000EB039 /* CounterView.swift */; };
 		02D9461627B32137008EDD5F /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9461527B32137008EDD5F /* CustomStackView.swift */; };
 		02D9461A27B32F82008EDD5F /* ScrollingEffectRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9461927B32F82008EDD5F /* ScrollingEffectRootView.swift */; };
 		02D9461C27B398DB008EDD5F /* WeatherDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9461B27B398DB008EDD5F /* WeatherDataView.swift */; };
@@ -226,6 +227,7 @@
 		02D0515D27D21009007EA76F /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		02D0515F27D21476007EA76F /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		02D0516127D299CC007EA76F /* CalendarTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTask.swift; sourceTree = "<group>"; };
+		02D8D4B2286A6A7E000EB039 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		02D9461527B32137008EDD5F /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
 		02D9461927B32F82008EDD5F /* ScrollingEffectRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingEffectRootView.swift; sourceTree = "<group>"; };
 		02D9461B27B398DB008EDD5F /* WeatherDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataView.swift; sourceTree = "<group>"; };
@@ -555,6 +557,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				02D8D4B1286A6A1E000EB039 /* StateObjectVSObservedObject */,
 				022C9B092818CFBA00FE1AB1 /* BadgeView */,
 				02A4F0152816145D00CE47A7 /* AppStoreHeroAnimations */,
 				0253CF0527F6736000CDD7EA /* ScrollToTop */,
@@ -716,6 +719,14 @@
 				02D0516127D299CC007EA76F /* CalendarTask.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		02D8D4B1286A6A1E000EB039 /* StateObjectVSObservedObject */ = {
+			isa = PBXGroup;
+			children = (
+				02D8D4B2286A6A7E000EB039 /* CounterView.swift */,
+			);
+			path = StateObjectVSObservedObject;
 			sourceTree = "<group>";
 		};
 		02E809AF279E635800945E91 /* AnimationHikingData */ = {
@@ -1082,6 +1093,7 @@
 				02D0515E27D21009007EA76F /* CustomDatePicker.swift in Sources */,
 				02C09CA027CF4EAE00583932 /* User.swift in Sources */,
 				02E809C1279FD99F00945E91 /* CategoryHome.swift in Sources */,
+				02D8D4B3286A6A7F000EB039 /* CounterView.swift in Sources */,
 				02FA9D5727A8730F003344BC /* CreditCardFilter.swift in Sources */,
 				02E809DB279FDB5C00945E91 /* LandmarkContentView.swift in Sources */,
 				02F536D327B20DA600D06B93 /* WeatherView.swift in Sources */,
