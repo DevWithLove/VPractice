@@ -113,6 +113,10 @@
 		02E809E627A2294D00945E91 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809E527A2294D00945E91 /* Profile.swift */; };
 		02F35187287A6BCB001B5CC6 /* CustomContexMenuReactionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35186287A6BCB001B5CC6 /* CustomContexMenuReactionContent.swift */; };
 		02F35189287A6FBB001B5CC6 /* BoundsPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35188287A6FBB001B5CC6 /* BoundsPreference.swift */; };
+		02F3518B287BD467001B5CC6 /* PopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3518A287BD467001B5CC6 /* PopOverView.swift */; };
+		02F3518E287BF5E9001B5CC6 /* PreferenceKeySampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3518D287BF5E9001B5CC6 /* PreferenceKeySampleView.swift */; };
+		02F35190287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3518F287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift */; };
+		02F35192287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35191287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift */; };
 		02F536C627B1F9E300D06B93 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536C527B1F9E300D06B93 /* LocationManager.swift */; };
 		02F536CB27B1FB7A00D06B93 /* WeatherDemoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536CA27B1FB7A00D06B93 /* WeatherDemoContentView.swift */; };
 		02F536CD27B1FBB200D06B93 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536CC27B1FBB200D06B93 /* WelcomeView.swift */; };
@@ -257,6 +261,10 @@
 		02E809E527A2294D00945E91 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		02F35186287A6BCB001B5CC6 /* CustomContexMenuReactionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContexMenuReactionContent.swift; sourceTree = "<group>"; };
 		02F35188287A6FBB001B5CC6 /* BoundsPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsPreference.swift; sourceTree = "<group>"; };
+		02F3518A287BD467001B5CC6 /* PopOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverView.swift; sourceTree = "<group>"; };
+		02F3518D287BF5E9001B5CC6 /* PreferenceKeySampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeySampleView.swift; sourceTree = "<group>"; };
+		02F3518F287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeySampleView.swift; sourceTree = "<group>"; };
+		02F35191287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyView.swift; sourceTree = "<group>"; };
 		02F536C527B1F9E300D06B93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		02F536CA27B1FB7A00D06B93 /* WeatherDemoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDemoContentView.swift; sourceTree = "<group>"; };
 		02F536CC27B1FBB200D06B93 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -307,6 +315,7 @@
 			children = (
 				022C9B0A2818D02100FE1AB1 /* BadgeButton.swift */,
 				022C9B0C2818D2CA00FE1AB1 /* PopOverBadge.swift */,
+				02F3518A287BD467001B5CC6 /* PopOverView.swift */,
 			);
 			path = BadgeView;
 			sourceTree = "<group>";
@@ -561,6 +570,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				02F3518C287BF5CA001B5CC6 /* PreferenceKeySample */,
 				02F35185287A6BA2001B5CC6 /* AdvancedDelayTransitions */,
 				02D8D4B1286A6A1E000EB039 /* StateObjectVSObservedObject */,
 				022C9B092818CFBA00FE1AB1 /* BadgeView */,
@@ -806,6 +816,16 @@
 				02F35188287A6FBB001B5CC6 /* BoundsPreference.swift */,
 			);
 			path = AdvancedDelayTransitions;
+			sourceTree = "<group>";
+		};
+		02F3518C287BF5CA001B5CC6 /* PreferenceKeySample */ = {
+			isa = PBXGroup;
+			children = (
+				02F3518D287BF5E9001B5CC6 /* PreferenceKeySampleView.swift */,
+				02F3518F287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift */,
+				02F35191287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift */,
+			);
+			path = PreferenceKeySample;
 			sourceTree = "<group>";
 		};
 		02F536C327B1F98900D06B93 /* WeatherDemo */ = {
@@ -1106,15 +1126,19 @@
 				02782E1627745FF5002076BD /* SceneDelegate.swift in Sources */,
 				02782E7827757104002076BD /* UserInfo.swift in Sources */,
 				02D9461627B32137008EDD5F /* CustomStackView.swift in Sources */,
+				02F3518B287BD467001B5CC6 /* PopOverView.swift in Sources */,
 				02D0515E27D21009007EA76F /* CustomDatePicker.swift in Sources */,
 				02C09CA027CF4EAE00583932 /* User.swift in Sources */,
 				02E809C1279FD99F00945E91 /* CategoryHome.swift in Sources */,
 				02D8D4B3286A6A7F000EB039 /* CounterView.swift in Sources */,
 				02FA9D5727A8730F003344BC /* CreditCardFilter.swift in Sources */,
 				02E809DB279FDB5C00945E91 /* LandmarkContentView.swift in Sources */,
+				02F35190287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift in Sources */,
 				02F536D327B20DA600D06B93 /* WeatherView.swift in Sources */,
 				0240B0D227AF22D20060DAA4 /* CardRootView.swift in Sources */,
+				02F3518E287BF5E9001B5CC6 /* PreferenceKeySampleView.swift in Sources */,
 				02FA9D5127A22B91003344BC /* ProfileHost.swift in Sources */,
+				02F35192287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift in Sources */,
 				0253CF0727F6738B00CDD7EA /* ScrollToTopHome.swift in Sources */,
 				02D0516027D21476007EA76F /* DateValue.swift in Sources */,
 				02ACC40A27AB39DB008991C0 /* BottomSheetContentView.swift in Sources */,
