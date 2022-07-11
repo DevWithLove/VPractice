@@ -27,6 +27,7 @@ enum SampleUIItems: String, CaseIterable {
     case ScrollToTop = "ScrollToTop"
     case appStoreHeroAnimation = "App Store Animation"
     case randomCounterView = "Random Counter"
+    case customTransitions = "Custom Transitions"
     
     @ViewBuilder
     func getDestiationView() -> some View {
@@ -79,6 +80,8 @@ enum SampleUIItems: String, CaseIterable {
             AppStoreHeroHome().navigationBarTitle(Text(self.rawValue), displayMode: .inline)
         case .randomCounterView:
             RandomNumberView()
+        case .customTransitions:
+            CustomContexMenuReactionContent()
         }
     }
 }

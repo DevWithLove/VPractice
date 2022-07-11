@@ -111,6 +111,8 @@
 		02E809E227A1209600945E91 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809E127A1209600945E91 /* CategoryRow.swift */; };
 		02E809E427A1230100945E91 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809E327A1230100945E91 /* CategoryItem.swift */; };
 		02E809E627A2294D00945E91 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809E527A2294D00945E91 /* Profile.swift */; };
+		02F35187287A6BCB001B5CC6 /* CustomContexMenuReactionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35186287A6BCB001B5CC6 /* CustomContexMenuReactionContent.swift */; };
+		02F35189287A6FBB001B5CC6 /* BoundsPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35188287A6FBB001B5CC6 /* BoundsPreference.swift */; };
 		02F536C627B1F9E300D06B93 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536C527B1F9E300D06B93 /* LocationManager.swift */; };
 		02F536CB27B1FB7A00D06B93 /* WeatherDemoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536CA27B1FB7A00D06B93 /* WeatherDemoContentView.swift */; };
 		02F536CD27B1FBB200D06B93 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536CC27B1FBB200D06B93 /* WelcomeView.swift */; };
@@ -253,6 +255,8 @@
 		02E809E127A1209600945E91 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		02E809E327A1230100945E91 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		02E809E527A2294D00945E91 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		02F35186287A6BCB001B5CC6 /* CustomContexMenuReactionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContexMenuReactionContent.swift; sourceTree = "<group>"; };
+		02F35188287A6FBB001B5CC6 /* BoundsPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsPreference.swift; sourceTree = "<group>"; };
 		02F536C527B1F9E300D06B93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		02F536CA27B1FB7A00D06B93 /* WeatherDemoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDemoContentView.swift; sourceTree = "<group>"; };
 		02F536CC27B1FBB200D06B93 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -557,6 +561,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				02F35185287A6BA2001B5CC6 /* AdvancedDelayTransitions */,
 				02D8D4B1286A6A1E000EB039 /* StateObjectVSObservedObject */,
 				022C9B092818CFBA00FE1AB1 /* BadgeView */,
 				02A4F0152816145D00CE47A7 /* AppStoreHeroAnimations */,
@@ -792,6 +797,15 @@
 				02E809D1279FDB5C00945E91 /* MapView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		02F35185287A6BA2001B5CC6 /* AdvancedDelayTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				02F35186287A6BCB001B5CC6 /* CustomContexMenuReactionContent.swift */,
+				02F35188287A6FBB001B5CC6 /* BoundsPreference.swift */,
+			);
+			path = AdvancedDelayTransitions;
 			sourceTree = "<group>";
 		};
 		02F536C327B1F98900D06B93 /* WeatherDemo */ = {
@@ -1041,6 +1055,7 @@
 				02782E1827745FF5002076BD /* RepositoriesViewController.swift in Sources */,
 				02F536D127B200E900D06B93 /* WeatherManager.swift in Sources */,
 				02F536CF27B1FE9200D06B93 /* LoadingView.swift in Sources */,
+				02F35189287A6FBB001B5CC6 /* BoundsPreference.swift in Sources */,
 				02C820E927950FAC00F368B9 /* RepositoryListHostingViewController.swift in Sources */,
 				02E809B8279E65A200945E91 /* GraphCapsule.swift in Sources */,
 				02782E51277464EB002076BD /* ListError.swift in Sources */,
@@ -1063,6 +1078,7 @@
 				02E809D3279FDB5C00945E91 /* LandmarkList.swift in Sources */,
 				02A4F019281614AB00CE47A7 /* Today.swift in Sources */,
 				02782E6E27754CC4002076BD /* SettingsViewModel.swift in Sources */,
+				02F35187287A6BCB001B5CC6 /* CustomContexMenuReactionContent.swift in Sources */,
 				02D9461A27B32F82008EDD5F /* ScrollingEffectRootView.swift in Sources */,
 				02E809E627A2294D00945E91 /* Profile.swift in Sources */,
 				0245A52C27DE97A4006305F3 /* DropDragHomeView.swift in Sources */,
