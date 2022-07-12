@@ -117,6 +117,7 @@
 		02F3518E287BF5E9001B5CC6 /* PreferenceKeySampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3518D287BF5E9001B5CC6 /* PreferenceKeySampleView.swift */; };
 		02F35190287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3518F287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift */; };
 		02F35192287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35191287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift */; };
+		02F35194287D1419001B5CC6 /* AnchorPreferencesKeySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35193287D1419001B5CC6 /* AnchorPreferencesKeySample.swift */; };
 		02F536C627B1F9E300D06B93 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536C527B1F9E300D06B93 /* LocationManager.swift */; };
 		02F536CB27B1FB7A00D06B93 /* WeatherDemoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536CA27B1FB7A00D06B93 /* WeatherDemoContentView.swift */; };
 		02F536CD27B1FBB200D06B93 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536CC27B1FBB200D06B93 /* WelcomeView.swift */; };
@@ -265,6 +266,7 @@
 		02F3518D287BF5E9001B5CC6 /* PreferenceKeySampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeySampleView.swift; sourceTree = "<group>"; };
 		02F3518F287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeySampleView.swift; sourceTree = "<group>"; };
 		02F35191287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyView.swift; sourceTree = "<group>"; };
+		02F35193287D1419001B5CC6 /* AnchorPreferencesKeySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorPreferencesKeySample.swift; sourceTree = "<group>"; };
 		02F536C527B1F9E300D06B93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		02F536CA27B1FB7A00D06B93 /* WeatherDemoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDemoContentView.swift; sourceTree = "<group>"; };
 		02F536CC27B1FBB200D06B93 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -824,6 +826,7 @@
 				02F3518D287BF5E9001B5CC6 /* PreferenceKeySampleView.swift */,
 				02F3518F287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift */,
 				02F35191287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift */,
+				02F35193287D1419001B5CC6 /* AnchorPreferencesKeySample.swift */,
 			);
 			path = PreferenceKeySample;
 			sourceTree = "<group>";
@@ -1159,6 +1162,7 @@
 				0240B0DB27B0D2100060DAA4 /* ProgressRing.swift in Sources */,
 				02C820E32795011100F368B9 /* RepositoryListRow.swift in Sources */,
 				02E809E0279FDF4800945E91 /* LandmarkModelData.swift in Sources */,
+				02F35194287D1419001B5CC6 /* AnchorPreferencesKeySample.swift in Sources */,
 				02F536CD27B1FBB200D06B93 /* WelcomeView.swift in Sources */,
 				02FA9D5C27AB2D5D003344BC /* BottomSheet.swift in Sources */,
 				02782E7627756816002076BD /* UserInfoView.swift in Sources */,
