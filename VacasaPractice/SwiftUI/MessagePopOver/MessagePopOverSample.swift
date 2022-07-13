@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct MessaePopOver: View {
-    @State private var selectedMessageId: String?// = "button3"
+struct MessagePopOverSample: View {
+    @State private var selectedMessageId: String? = "button1"
+    @State private var popOverHeight: CGFloat = .zero
 
     var body: some View {
         ScrollView(.vertical) {
@@ -69,6 +70,7 @@ struct MessaePopOver: View {
                     return ["button3": value]
                 }
             }
+            .padding(.bottom, popOverHeight)
             .frame(maxWidth: .infinity)
         }
         .overlayPreferenceValue(PopOverTextPreferenceKey.self) { value in
@@ -83,6 +85,10 @@ struct MessaePopOver: View {
                             Text("sdfsd dsfsdfdsf d dsfsf dsfsd fds fsd fsd fds fdsf ds fds fdd dsf ds fds button \(messageId)")
                         }
                         .frame(maxWidth: .infinity)
+                        .coordinateSpace(name: "PopOverContent")
+                    })
+                    .measureSize(perform: { size in
+                        popOverHeight = size.height
                     })
                     .offset(y: rect.maxY + 10)
                 }
@@ -90,6 +96,7 @@ struct MessaePopOver: View {
         }
         .onTapGesture {
             selectedMessageId = nil
+            popOverHeight = .zero
         }
     }
 }
@@ -113,9 +120,9 @@ struct VCMessagePopOver<Content: View>: View {
     }
 }
 
-struct MessaePopOver_Previews: PreviewProvider {
+struct MessagePopOverSample_Previews: PreviewProvider {
     static var previews: some View {
-        MessaePopOver()
+        MessagePopOverSample()
     }
 }
 
@@ -126,4 +133,29 @@ struct PopOverTextPreferenceKey: PreferenceKey {
     static func reduce(value: inout [String : Anchor<CGRect>], nextValue: () -> [String : Anchor<CGRect>]) {
         value.merge(nextValue()){$1}
     }
+}
+
+
+struct SizePreferenceKey: PreferenceKey {
+  static var defaultValue: CGSize = .zero
+
+  static func reduce(value: inout CGSize, nextValue: () -> CGSize) {
+    value = nextValue()
+  }
+}
+
+struct MeasureSizeModifier: ViewModifier {
+  func body(content: Content) -> some View {
+    content.background(GeometryReader { geometry in
+      Color.clear.preference(key: SizePreferenceKey.self,
+                             value: geometry.size)
+    })
+  }
+}
+
+extension View {
+  func measureSize(perform action: @escaping (CGSize) -> Void) -> some View {
+    self.modifier(MeasureSizeModifier())
+      .onPreferenceChange(SizePreferenceKey.self, perform: action)
+  }
 }

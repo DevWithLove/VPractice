@@ -118,6 +118,7 @@
 		02F35190287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3518F287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift */; };
 		02F35192287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35191287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift */; };
 		02F35194287D1419001B5CC6 /* AnchorPreferencesKeySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35193287D1419001B5CC6 /* AnchorPreferencesKeySample.swift */; };
+		02F35197287D1CA8001B5CC6 /* MessagePopOverSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35196287D1CA8001B5CC6 /* MessagePopOverSample.swift */; };
 		02F536C627B1F9E300D06B93 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536C527B1F9E300D06B93 /* LocationManager.swift */; };
 		02F536CB27B1FB7A00D06B93 /* WeatherDemoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536CA27B1FB7A00D06B93 /* WeatherDemoContentView.swift */; };
 		02F536CD27B1FBB200D06B93 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F536CC27B1FBB200D06B93 /* WelcomeView.swift */; };
@@ -267,6 +268,7 @@
 		02F3518F287BFB67001B5CC6 /* GeometryPreferenceKeySampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKeySampleView.swift; sourceTree = "<group>"; };
 		02F35191287BFEB7001B5CC6 /* ScrollViewOffsetPreferenceKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyView.swift; sourceTree = "<group>"; };
 		02F35193287D1419001B5CC6 /* AnchorPreferencesKeySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorPreferencesKeySample.swift; sourceTree = "<group>"; };
+		02F35196287D1CA8001B5CC6 /* MessagePopOverSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopOverSample.swift; sourceTree = "<group>"; };
 		02F536C527B1F9E300D06B93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		02F536CA27B1FB7A00D06B93 /* WeatherDemoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDemoContentView.swift; sourceTree = "<group>"; };
 		02F536CC27B1FBB200D06B93 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -572,6 +574,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				02F35195287D1C92001B5CC6 /* MessagePopOver */,
 				02F3518C287BF5CA001B5CC6 /* PreferenceKeySample */,
 				02F35185287A6BA2001B5CC6 /* AdvancedDelayTransitions */,
 				02D8D4B1286A6A1E000EB039 /* StateObjectVSObservedObject */,
@@ -829,6 +832,14 @@
 				02F35193287D1419001B5CC6 /* AnchorPreferencesKeySample.swift */,
 			);
 			path = PreferenceKeySample;
+			sourceTree = "<group>";
+		};
+		02F35195287D1C92001B5CC6 /* MessagePopOver */ = {
+			isa = PBXGroup;
+			children = (
+				02F35196287D1CA8001B5CC6 /* MessagePopOverSample.swift */,
+			);
+			path = MessagePopOver;
 			sourceTree = "<group>";
 		};
 		02F536C327B1F98900D06B93 /* WeatherDemo */ = {
@@ -1132,6 +1143,7 @@
 				02F3518B287BD467001B5CC6 /* PopOverView.swift in Sources */,
 				02D0515E27D21009007EA76F /* CustomDatePicker.swift in Sources */,
 				02C09CA027CF4EAE00583932 /* User.swift in Sources */,
+				02F35197287D1CA8001B5CC6 /* MessagePopOverSample.swift in Sources */,
 				02E809C1279FD99F00945E91 /* CategoryHome.swift in Sources */,
 				02D8D4B3286A6A7F000EB039 /* CounterView.swift in Sources */,
 				02FA9D5727A8730F003344BC /* CreditCardFilter.swift in Sources */,
