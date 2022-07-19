@@ -29,6 +29,7 @@ enum SampleUIItems: String, CaseIterable {
     case randomCounterView = "Random Counter"
     case customTransitions = "Custom Transitions"
     case popOver = "Popover View"
+    case openSetting = "Open Setting"
     
     @ViewBuilder
     func getDestiationView() -> some View {
@@ -85,6 +86,8 @@ enum SampleUIItems: String, CaseIterable {
             CustomContexMenuReactionContent()
         case .popOver:
             MessagePopOverSample()
+        case .openSetting:
+            DirectUserToSettingsView()
         }
     }
 }

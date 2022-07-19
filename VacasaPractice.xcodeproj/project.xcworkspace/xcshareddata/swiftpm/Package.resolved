@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "FLEX",
-        "repositoryURL": "https://github.com/FLEXTool/FLEX.git",
-        "state": {
-          "branch": "master",
-          "revision": "2983649cdb00b418ba054f6bd41615813e03c0e9",
-          "version": null
-        }
-      },
-      {
-        "package": "SnapKit",
-        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
-        "state": {
-          "branch": null,
-          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
-          "version": "5.0.1"
-        }
+  "pins" : [
+    {
+      "identity" : "flex",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FLEXTool/FLEX.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "2983649cdb00b418ba054f6bd41615813e03c0e9"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+        "version" : "5.0.1"
+      }
+    }
+  ],
+  "version" : 2
 }
