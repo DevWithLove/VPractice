@@ -26,7 +26,7 @@ struct DirectUserToSettingsView: View {
     }
 
     func openSystemSettings() {
-        guard let settingsUrl = URL(string: "App-Prefs:root=DISPLAY") else {
+        guard let settingsUrl = URL(string: "App-prefs:DISPLAY") else {
             return
         }
 

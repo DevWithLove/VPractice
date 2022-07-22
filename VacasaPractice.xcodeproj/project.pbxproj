@@ -91,6 +91,7 @@
 		02D9461C27B398DB008EDD5F /* WeatherDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9461B27B398DB008EDD5F /* WeatherDataView.swift */; };
 		02D9461E27B3A177008EDD5F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9461D27B3A177008EDD5F /* Forecast.swift */; };
 		02E467CA28876AF80099D7EB /* DirectUserToSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E467C928876AF80099D7EB /* DirectUserToSettingsView.swift */; };
+		02E467CF288A38440099D7EB /* ScalingDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E467CE288A38440099D7EB /* ScalingDotsView.swift */; };
 		02E809B1279E637E00945E91 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809B0279E637E00945E91 /* Hike.swift */; };
 		02E809B3279E63D600945E91 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 02E809B2279E63D600945E91 /* hikeData.json */; };
 		02E809B8279E65A200945E91 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E809B7279E65A200945E91 /* GraphCapsule.swift */; };
@@ -242,6 +243,7 @@
 		02D9461B27B398DB008EDD5F /* WeatherDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataView.swift; sourceTree = "<group>"; };
 		02D9461D27B3A177008EDD5F /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		02E467C928876AF80099D7EB /* DirectUserToSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectUserToSettingsView.swift; sourceTree = "<group>"; };
+		02E467CE288A38440099D7EB /* ScalingDotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingDotsView.swift; sourceTree = "<group>"; };
 		02E809B0279E637E00945E91 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		02E809B2279E63D600945E91 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		02E809B7279E65A200945E91 /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
@@ -576,6 +578,7 @@
 		027A184C279CAB0700CCCF39 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				02E467CD288A380A0099D7EB /* LoadingDotsAnimation */,
 				02E467C828876AE50099D7EB /* OpenSetting */,
 				02F35195287D1C92001B5CC6 /* MessagePopOver */,
 				02F3518C287BF5CA001B5CC6 /* PreferenceKeySample */,
@@ -758,6 +761,14 @@
 				02E467C928876AF80099D7EB /* DirectUserToSettingsView.swift */,
 			);
 			path = OpenSetting;
+			sourceTree = "<group>";
+		};
+		02E467CD288A380A0099D7EB /* LoadingDotsAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				02E467CE288A38440099D7EB /* ScalingDotsView.swift */,
+			);
+			path = LoadingDotsAnimation;
 			sourceTree = "<group>";
 		};
 		02E809AF279E635800945E91 /* AnimationHikingData */ = {
@@ -1079,6 +1090,7 @@
 			files = (
 				025A3A7327CAC6AF00E6B9A1 /* Expense.swift in Sources */,
 				028E153A279A327E0008949E /* VacasaPractices.docc in Sources */,
+				02E467CF288A38440099D7EB /* ScalingDotsView.swift in Sources */,
 				02D9461C27B398DB008EDD5F /* WeatherDataView.swift in Sources */,
 				0240B0D927B0D0B60060DAA4 /* FastingTimerRootView.swift in Sources */,
 				027A184E279CAB4400CCCF39 /* ExpandableButtonPanel.swift in Sources */,
